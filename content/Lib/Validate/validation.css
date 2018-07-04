@@ -1,0 +1,15 @@
+label.ValError {
+    color: #e5603b;
+    font-size: 4vw;
+    line-height: inherit;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.form-control.ValError {
+    border-color: #ff5b57;
+}
+
+.form-control.valid {
+    border-color: #00acac;
+}

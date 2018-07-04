@@ -1,0 +1,2267 @@
+
+
+#PartialSetting > .header {
+    height: 15vw;
+    line-height: 20vw;
+    font-size: 6vw;
+    text-align: center;
+    background: #fb7299;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#PartialSetting .context {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 24vw;
+    bottom: 0;
+    width: 300vw;
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+/*#PartialSetting .context.sp0 {
+        -moz-transform: translate3d(0vw,0,0);
+        -ms-transform: translate3d(0vw,0,0);
+        -o-transform: translate3d(0vw,0,0);
+        -webkit-transform: translate3d(0vw,0,0);
+        transform: translate3d(0vw,0,0);
+    }
+
+    #PartialSetting .context.sp1 {
+        -moz-transform: translate3d(-10rem,0,0);
+        -ms-transform: translate3d(-10rem,0,0);
+        -o-transform: translate3d(-10rem,0,0);
+        -webkit-transform: translate3d(-10rem,0,0);
+        transform: translate3d(-10rem,0,0);
+    }
+
+    #PartialSetting .context.sp2 {
+        -moz-transform: translate3d(-20rem,0,0);
+        -ms-transform: translate3d(-20rem,0,0);
+        -o-transform: translate3d(-20rem,0,0);
+        -webkit-transform: translate3d(-20rem,0,0);
+        transform: translate3d(-20rem,0,0);
+    }*/
+/*头部子页切换按钮*/
+#PartialSetting .swapChildPageNav {
+    height: 9vw;
+    background: #fb7299;
+    color: #fff;
+    position: absolute;
+    top: 15vw;
+    left: 0;
+    width: 100%;
+}
+
+    #PartialSetting .swapChildPageNav ul {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+        #PartialSetting .swapChildPageNav ul li {
+            line-height: 6vw;
+            font-size: 5vw;
+            height: 6vw;
+            width: 30vw;
+            text-align: center;
+        }
+
+    #PartialSetting .swapChildPageNav .splitLine {
+        height: 1vw;
+        background: #fff;
+        width: 30vw;
+        position: absolute;
+        bottom: 1vw;
+        left: 5vw;
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+
+
+/*左右滑动子页*/
+#PartialSetting .context {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+    #PartialSetting .context .context-panel {
+        padding: 3vw;
+        display: inline-block;
+        vertical-align: top;
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+/*配置项目*/
+#PartialSetting #panel-feature {
+}
+/*自定义出征*/
+#PartialSetting #panel-custompve {
+}
+/*配置项目*/
+
+#PartialSetting .ini_checklist {
+    overflow: hidden;
+    padding-bottom: 1vw;
+}
+
+    #PartialSetting .ini_checklist .iniTitle {
+        font-size: 5.5vw;
+        height: 10vw;
+        line-height: 8vw;
+        color: #6b6969;
+        font-weight: bolder;
+        border-bottom: 0.15rem solid #808080;
+        margin-bottom: 2vw;
+    }
+
+    #PartialSetting .ini_checklist:last-child {
+        border-bottom: none;
+    }
+
+    #PartialSetting .ini_checklist .check-cell {
+        width: 50%;
+        float: left;
+        margin-bottom: 1vw;
+        position: relative;
+    }
+
+        #PartialSetting .ini_checklist .check-cell.row {
+            width: 100%;
+        }
+
+        #PartialSetting .ini_checklist .check-cell .config {
+            position: absolute;
+            right: 3vw;
+            top: 0.1rem;
+            font-size: 5vw;
+            width: 7vw;
+            text-align: center;
+            height: 7vw;
+            line-height: 5vw;
+            display: block;
+            padding: 1vw;
+            color: #fff;
+            background: #709dcc;
+        }
+
+        #PartialSetting .ini_checklist .check-cell .sayTip {
+            position: absolute;
+            font-size: 6vw;
+            right: 3vw;
+            top: 0;
+            color: #709dcc;
+        }
+
+        #PartialSetting .ini_checklist .check-cell .disNumber {
+            position: absolute;
+            font-size: 6vw;
+            right: 3vw;
+            top: 1vw;
+            color: #444;
+        }
+
+    #PartialSetting .ini_checklist .md-radio-inline {
+        padding-left: 5vw;
+    }
+
+        #PartialSetting .ini_checklist .md-radio-inline .md-radio {
+            display: inline-block;
+            margin-right: 4vw;
+            position: relative;
+            min-width: 16vw;
+        }
+
+/*自定义出征*/
+#PartialSetting #panel-custompve .topactions {
+    overflow: hidden;
+    height: 10vw;
+    line-height: 10vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    #PartialSetting #panel-custompve .topactions .btnCustomOrder {
+        color: #28a7c3;
+        width: 18vw;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #2cc1e2;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+    #PartialSetting #panel-custompve .topactions .btnSelectCustomSelecter {
+        color: #0094ff;
+        width: 22vw;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #62b9f8;
+        margin-left: 3%;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+    #PartialSetting #panel-custompve .topactions .btnOpenWebSelecter {
+        color: #f98032;
+        width: 22vw;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #fc7a3e;
+        margin-left: 3%;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+    #PartialSetting #panel-custompve .topactions .btnAddCustomSelecter {
+        color: #6db74f;
+        width: 22vw;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #81db5a;
+        margin-left: 3%;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+#PartialSetting #panel-custompve .customPve {
+    border: 0.1rem dotted #a7b7d7;
+    margin-top: 5vw;
+    min-height: 100vw;
+}
+
+    #PartialSetting #panel-custompve .customPve .workname {
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0;
+        margin: 0 2vw;
+        border-bottom: 0.1rem solid #99a2a9;
+    }
+
+    #PartialSetting #panel-custompve .customPve label {
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+        line-height: 10vw;
+        margin-right: 3vw;
+    }
+
+    #PartialSetting #panel-custompve .customPve .workname #WorkName {
+        color: #797575;
+        width: 40vw;
+        height: 10vw;
+        font-size: 5vw;
+        text-indent: 2vw;
+        border-radius: 1vw;
+        border: 0.05rem solid #a9a9a9;
+        background: #fff;
+    }
+
+    #PartialSetting #panel-custompve .customPve .workname #btnSaveSet {
+        color: #0094ff;
+        width: 18vw;
+        display: block;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #66b0e6;
+        margin-left: 3%;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+    #PartialSetting #panel-custompve .customPve .workname #btnDeleteSet {
+        color: #ec665e;
+        width: 12vw;
+        display: block;
+        text-align: center;
+        float: left;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.1rem solid #e88166;
+        margin-left: 3%;
+        height: 10vw;
+        font-weight: bolder;
+        display: block;
+        line-height: 8vw;
+    }
+
+    #PartialSetting #panel-custompve .customPve .mappanel {
+        position: relative;
+        padding-top: 10vw;
+    }
+
+        #PartialSetting #panel-custompve .customPve .mappanel .tip {
+            position: absolute;
+            left: 2vw;
+            top: 6vw;
+            font-size: 3vw;
+            color: #696aee;
+            font-weight: bolder;
+        }
+
+        #PartialSetting #panel-custompve .customPve .mappanel .listMapEnemy {
+            position: absolute;
+            left: 2vw;
+            top: 1vw;
+            font-size: 3.6vw;
+            color: #dc4239;
+            border-bottom: 1px solid;
+        }
+
+        #PartialSetting #panel-custompve .customPve .mappanel .listDraps {
+            position: absolute;
+            left: 33vw;
+            top: 1vw;
+            font-size: 3.6vw;
+            color: #dc4239;
+            border-bottom: 1px solid;
+        }
+
+
+
+        #PartialSetting #panel-custompve .customPve .mappanel .name {
+            position: absolute;
+            right: 2vw;
+            top: 0;
+            font-size: 4vw;
+            color: #2779ca;
+            font-weight: bolder;
+            width: 28vw;
+            text-align: center;
+            height: 10vw;
+            line-height: 10vw;
+            overflow: hidden;
+        }
+
+        #PartialSetting #panel-custompve .customPve .mappanel .toogleMap {
+            position: absolute;
+            right: 2vw;
+            top: 1vw;
+            display: none;
+        }
+
+        #PartialSetting #panel-custompve .customPve .mappanel .showMaxMap {
+            position: absolute;
+            right: 4vw;
+            top: 10vw;
+            font-size: 6vw;
+            color: #f5a597;
+        }
+
+    #PartialSetting #panel-custompve .customPve .map {
+        width: 89vw;
+        height: 50vw;
+        background: #c6dcec;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 2vw;
+    }
+
+        #PartialSetting #panel-custompve .customPve .map .reSetPath {
+            position: absolute;
+            font-size: 4vw;
+            right: 1vw;
+            bottom: 1vw;
+            margin-bottom: 0;
+            height: 23vw;
+            line-height: 5vw;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 0.1rem solid #fb7299;
+            border-radius: 4px;
+            color: #fb7299;
+            background: #fff;
+            padding: 1vw 1vw;
+            white-space: normal;
+            width: 9vw;
+            word-break: break-all;
+            text-align: center;
+        }
+
+        #PartialSetting #panel-custompve .customPve .map .node {
+            position: absolute;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 0.1rem;
+            background: #ff2c5b;
+            border: 0.1rem solid #292929;
+            left: 0%;
+            top: 0%;
+            opacity: 0;
+        }
+
+            #PartialSetting #panel-custompve .customPve .map .node.selected {
+                opacity: 1;
+                /*background:blue;
+                transition:background-color 3.8s linear;*/
+            }
+    /*路径*/
+    #PartialSetting #panel-custompve .customPve .pathslist {
+        margin: 0 2vw;
+        border-top: 0.1rem solid #99a2a9;
+        min-height: 5vw;
+    }
+
+
+
+        #PartialSetting #panel-custompve .customPve .pathslist .path {
+            padding: 3vw 0;
+            overflow-x: auto;
+        }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .path .lfactions {
+                width: 12vw;
+                background: #f8f8f8;
+                border-radius: 0.2rem;
+                display: inline-block;
+                text-align: center;
+                font-size: 6vw;
+                vertical-align: middle;
+            }
+
+        #PartialSetting #panel-custompve .customPve .pathslist .node {
+            width: 20vw;
+            height: 20vw;
+            background: #f8f8f8;
+            border: 0.1rem solid #636363;
+            border-radius: 0.2rem;
+            display: inline-block;
+            text-align: center;
+            font-size: 6vw;
+            margin-right: 10vw;
+            position: relative;
+        }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node:last-child {
+                margin-right: 0vw;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node::after {
+                content: "\20";
+                content: "\f061";
+                display: block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                line-height: 18vw;
+                position: absolute;
+                left: 22vw;
+                top: 0;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node:last-child::after {
+                content: "";
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.fight {
+                border-color: #e84141;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.resource {
+                border-color: #3cc11e;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.wait {
+                border-color: #0094ff;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.skip {
+                border-color: #ffc100;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .filter {
+                font-size: 2vw;
+                position: absolute;
+                bottom: 1vw;
+                left: 1vw;
+                display: none;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.hasfilter .filter {
+                display: block;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .name {
+                line-height: 19vw;
+                color: #fb5d17;
+                font-weight: bolder;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .action {
+                font-size: 2vw;
+                position: absolute;
+                top: 1vw;
+                left: 1vw;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .action {
+                font-size: 2vw;
+                position: absolute;
+                top: 1vw;
+                left: 1vw;
+            }
+
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .fightNight {
+                font-size: 2vw;
+                position: absolute;
+                top: 1vw;
+                right: 1vw;
+                display: none;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.isfightNight .fightNight {
+                display: block;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.resource .fightNight, #PartialSetting #panel-custompve .customPve .pathslist .node.wait .fightNight, #PartialSetting #panel-custompve .customPve .pathslist .node.skip .fightNight {
+                display: none;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node .formation {
+                font-size: 2vw;
+                position: absolute;
+                bottom: 1vw;
+                right: 1vw;
+            }
+
+            #PartialSetting #panel-custompve .customPve .pathslist .node.resource .formation, #PartialSetting #panel-custompve .customPve .pathslist .node.wait .formation, #PartialSetting #panel-custompve .customPve .pathslist .node.resource .formation, #PartialSetting #panel-custompve .customPve .pathslist .node.skip .formation {
+                display: none;
+            }
+
+    /*修理方式*/
+    #PartialSetting #panel-custompve .customPve .repairLevel {
+        display: flex;
+        justify-content: flex-start;
+        padding: 3vw 0;
+        margin: 0 2vw;
+        border-top: 0.1rem solid #99a2a9;
+    }
+
+        #PartialSetting #panel-custompve .customPve .repairLevel label {
+            width: 25%;
+            height: 10vw;
+            font-size: 5vw;
+            line-height: 10vw;
+            margin-right: 3vw;
+        }
+
+        #PartialSetting #panel-custompve .customPve .repairLevel #RepairLevel {
+            width: 40%;
+            color: #797575;
+            float: left;
+            height: 10vw;
+            font-size: 5vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 0.1rem solid #b0aee2;
+        }
+
+        #PartialSetting #panel-custompve .customPve .repairLevel a {
+            color: #249df5;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem dashed;
+            height: 10vw;
+            font-weight: bolder;
+            line-height: 8vw;
+            width: 31%;
+            margin-left: 4%;
+        }
+
+            #PartialSetting #panel-custompve .customPve .repairLevel a.active {
+                border-style: solid;
+                color: #f98032;
+            }
+    /*修理方式*/
+    #PartialSetting #panel-custompve .customPve .userRemark {
+        display: flex;
+        justify-content: flex-start;
+        padding: 3vw 0;
+        margin: 0 2vw;
+        border-top: 0.1rem solid #99a2a9;
+    }
+
+        #PartialSetting #panel-custompve .customPve .userRemark label {
+            width: 25%;
+            height: 10vw;
+            font-size: 5vw;
+            line-height: 10vw;
+            margin-right: 3vw;
+        }
+
+        #PartialSetting #panel-custompve .customPve .userRemark #UserRemark {
+            width: 75%;
+            color: #797575;
+            float: left;
+            height: 30vw;
+            line-height: 7vw;
+            font-size: 5vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 0.1rem solid #b0aee2;
+            padding: 2vw;
+            resize: none;
+        }
+
+.modal_settingPanel_listMapEnemy {
+}
+
+    .modal_settingPanel_listMapEnemy .nodeEnemy {
+        margin-top: 3vw;
+    }
+
+        .modal_settingPanel_listMapEnemy .nodeEnemy:first-child {
+            margin-top: 0;
+        }
+
+        .modal_settingPanel_listMapEnemy .nodeEnemy h2 {
+            font-size: 7vw;
+            line-height: 9vw;
+        }
+
+        .modal_settingPanel_listMapEnemy .nodeEnemy .enemy {
+            font-size: 5vw;
+            line-height: 6vw;
+        }
+/*任务队列*/
+#PartialSetting #panel-pvequeue {
+}
+
+    #PartialSetting #panel-pvequeue .headertip {
+        font-size: 5vw;
+        line-height: 6vw;
+        border-bottom: 2px solid #c1c1c1;
+        padding-bottom: 1vw;
+    }
+
+        #PartialSetting #panel-pvequeue .headertip p:last-child {
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        #PartialSetting #panel-pvequeue .headertip i {
+            margin-right: 2vw;
+        }
+
+    #PartialSetting #panel-pvequeue .topactions {
+        overflow: hidden;
+        height: 10vw;
+        line-height: 10vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 3vw;
+    }
+
+        #PartialSetting #panel-pvequeue .topactions a.btnSelectQueueSelecter {
+            color: #0094ff;
+            width: 40vw;
+            display: block;
+            text-align: center;
+            float: left;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #62b9f8;
+            margin-left: 3%;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 9vw;
+        }
+
+        #PartialSetting #panel-pvequeue .topactions a.btnAddQueueSelecter {
+            color: #6db74f;
+            width: 22vw;
+            display: block;
+            text-align: center;
+            float: left;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #8dc973;
+            margin-left: 3%;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 9vw;
+        }
+
+    #PartialSetting #panel-pvequeue .pvequeue {
+        border: 0.1rem dotted #a7b7d7;
+        margin-top: 3vw;
+        min-height: 100vw;
+    }
+
+        #PartialSetting #panel-pvequeue .pvequeue .queuename {
+            display: flex;
+            justify-content: center;
+            padding: 3vw 0;
+            margin: 0 2vw;
+            border-bottom: 0.1rem solid #99a2a9;
+        }
+
+            #PartialSetting #panel-pvequeue .pvequeue .queuename > label {
+                width: 10vw;
+                height: 10vw;
+                font-size: 5vw;
+                line-height: 10vw;
+                margin-right: 3vw;
+            }
+
+            #PartialSetting #panel-pvequeue .pvequeue .queuename .WorkName {
+                color: #797575;
+                width: 40vw;
+                height: 10vw;
+                font-size: 5vw;
+                text-indent: 2vw;
+                border-radius: 1vw;
+                border: 2px solid #a9a9a9;
+                background: #fff;
+            }
+
+            #PartialSetting #panel-pvequeue .pvequeue .queuename > a.btnSaveSet {
+                color: #0094ff;
+                width: 18vw;
+                display: block;
+                text-align: center;
+                float: left;
+                font-size: 4vw;
+                border-radius: 1vw;
+                white-space: nowrap;
+                border: 0.1rem solid #66b0e6;
+                margin-left: 3%;
+                height: 10vw;
+                font-weight: bolder;
+                display: block;
+                line-height: 9vw;
+            }
+
+            #PartialSetting #panel-pvequeue .pvequeue .queuename > a.btnDeleteSet {
+                color: #e63f36;
+                width: 12vw;
+                display: block;
+                text-align: center;
+                float: left;
+                font-size: 4vw;
+                border-radius: 1vw;
+                white-space: nowrap;
+                border: 0.1rem solid #e88166;
+                margin-left: 3%;
+                height: 10vw;
+                font-weight: bolder;
+                display: block;
+                line-height: 9vw;
+            }
+
+        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist {
+        }
+
+            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                margin-top: 10vw;
+            }
+
+                #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode:first-child {
+                    margin-top: 5vw;
+                }
+
+                #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode:after {
+                    content: "\f063";
+                    display: block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    position: absolute;
+                    left: 17vw;
+                    top: 31vw;
+                    font-size: 7vw;
+                }
+
+                #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode:last-child:after {
+                    display: none;
+                }
+
+                #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody {
+                    width: 35vw;
+                    height: 30vw;
+                    position: relative;
+                }
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .order {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 5vw;
+                        height: 30vw;
+                        width: 5vw;
+                    }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .order i {
+                            position: absolute;
+                            width: 4vw;
+                            text-align: center;
+                        }
+
+                            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .order i:first-child {
+                                top: 3vw;
+                                left: 1vw;
+                                font-weight: bolder;
+                            }
+
+                            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .order i:last-child {
+                                top: 14vw;
+                                left: 1vw;
+                                font-weight: bolder;
+                            }
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .title {
+                        width: 35vw;
+                        height: 21vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 3vw 4vw;
+                        overflow: hidden;
+                        word-wrap: break-word;
+                        white-space: pre-wrap;
+                        text-align: center;
+                        border: 2px solid #828587;
+                        font-size: 4.2vw;
+                    }
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .actions {
+                        height: 10vw;
+                        display: flex;
+                        line-height: 10vw;
+                        justify-content: space-around;
+                    }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .actions a {
+                            display: block;
+                            width: 45%;
+                            font-size: 4vw;
+                            height: 7vw;
+                            line-height: 7vw;
+                            color: #676767;
+                            border: 2px solid;
+                            -moz-box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            text-align: center;
+                            margin-top: 1vw;
+                        }
+
+                            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .actions a.btnChangeNode {
+                                color: #6097bf;
+                            }
+
+                            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodebody .actions a.btnDelNode {
+                                color: #e46363;
+                            }
+
+
+                #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting {
+                    width: 42vw;
+                }
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workCount {
+                        height: 8vw;
+                        line-height: 8vw;
+                    }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workCount .workNumber {
+                            color: #797575;
+                            width: 20vw;
+                            height: 8vw;
+                            font-size: 5vw;
+                            text-indent: 2vw;
+                            border-radius: 1vw;
+                            border: 2px solid #a9a9a9;
+                            background: #fff;
+                            margin-left: 2vw;
+                        }
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workTeam {
+                        height: 8vw;
+                        line-height: 8vw;
+                        margin-top: 1vw;
+                    }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workTeam .workFleet {
+                            color: #797575;
+                            width: 20vw;
+                            height: 8vw;
+                            font-size: 3.8vw;
+                            text-indent: 2vw;
+                            border-radius: 1vw;
+                            border: 2px solid #a9a9a9;
+                            background: #fff;
+                            margin-left: 2vw;
+                        }
+
+
+
+                    #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 2vw;
+                        width: 100%;
+                    }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE {
+                            width: 48%;
+                            color: #fb7299;
+                            text-align: center;
+                            font-size: 4vw;
+                            border-radius: 1vw;
+                            white-space: nowrap;
+                            border: 0.1rem dashed;
+                            height: 9vw;
+                            font-weight: bolder;
+                            line-height: 8vw;
+                        }
+
+                        #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.btnOpenExpertSetting {
+                            width: 48%;
+                            color: #249df5;
+                            text-align: center;
+                            font-size: 4vw;
+                            border-radius: 1vw;
+                            white-space: nowrap;
+                            border: 0.1rem dashed;
+                            height: 9vw;
+                            font-weight: bolder;
+                            line-height: 8vw;
+                        }
+
+                            #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.btnOpenExpertSetting.active {
+                                border-style: solid;
+                                color: #f98032;
+                            }
+
+        #PartialSetting #panel-pvequeue .pvequeue .nodeplus {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid #8c8e8f;
+            margin-top: 2vw;
+        }
+
+            #PartialSetting #panel-pvequeue .pvequeue .nodeplus a {
+                width: 18vw;
+                height: 18vw;
+                font-size: 14vw;
+                line-height: 18vw;
+                text-align: center;
+                color: #5f5f5f;
+            }
+
+
+
+.slideCustompveWebSelecter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1080;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+    .slideCustompveWebSelecter .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .slideCustompveWebSelecter .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .slideCustompveWebSelecter .searchBar {
+        height: 15vw;
+        line-height: 15vw;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px #eaedeb solid;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 15vw;
+    }
+
+        .slideCustompveWebSelecter .searchBar label {
+            width: 20vw;
+            text-align: center;
+        }
+
+        .slideCustompveWebSelecter .searchBar input {
+            width: 72vw;
+            height: 100%;
+            border-radius: 1vw;
+            border: 2px solid #ccc6c6;
+            background-color: #fff;
+            outline: none;
+            -webkit-appearance: none;
+            font-size: 5vw;
+            text-indent: 2vw;
+            color: #ef7d7d;
+        }
+
+    .slideCustompveWebSelecter .uploadBar {
+        height: 10vw;
+        line-height: 10vw;
+        width: 100vw;
+        position: absolute;
+        left: 2vw;
+        top: 30vw;
+    }
+
+
+    .slideCustompveWebSelecter .custompvelist {
+        margin: 1vw auto;
+        flex-shrink: 4;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 96vw;
+        position: absolute;
+        left: 2vw;
+        top: 40vw;
+        bottom: 0;
+    }
+
+        .slideCustompveWebSelecter .custompvelist .custompve {
+            font-size: 3.6vw;
+            border: 0.05rem solid #929596;
+            padding: 1vw;
+            margin-bottom: 1vw;
+        }
+
+            .slideCustompveWebSelecter .custompvelist .custompve .hd {
+                display: flex;
+            }
+
+                .slideCustompveWebSelecter .custompvelist .custompve .hd dd {
+                    height: 6vw;
+                    line-height: 6vw;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .hd dd.map {
+                        width: 40vw;
+                    }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .hd dd.up {
+                        width: 15vw;
+                        margin-right: 3vw;
+                    }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .hd dd.download {
+                        width: 15vw;
+                        margin-right: 3vw;
+                    }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .hd dd.action {
+                        width: 16vw;
+                        text-align: right;
+                    }
+
+                        .slideCustompveWebSelecter .custompvelist .custompve .hd dd.action a {
+                            margin-bottom: 0;
+                            font-size: 4vw;
+                            font-weight: 400;
+                            text-align: center;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            background-image: none;
+                            border-radius: 0.1rem;
+                            color: #fb7299;
+                            font-weight: bolder;
+                        }
+
+            .slideCustompveWebSelecter .custompvelist .custompve .context {
+                display: flex;
+            }
+
+                .slideCustompveWebSelecter .custompvelist .custompve .context dd {
+                    font-size: 3.6vw;
+                    height: 6vw;
+                    line-height: 6vw;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .context dd.name {
+                        width: 55vw;
+                    }
+
+                    .slideCustompveWebSelecter .custompvelist .custompve .context dd.author {
+                        width: 37vw;
+                    }
+
+            .slideCustompveWebSelecter .custompvelist .custompve .remark {
+                font-size: 3.6vw;
+                word-wrap: break-word;
+                line-height: 4vw;
+                border-top: 0.05rem dashed #929596;
+                padding-top: 1vw;
+                margin-top: 1vw;
+            }
+
+.modal_settingPanel_shipdrap {
+}
+
+    .modal_settingPanel_shipdrap .starFilter {
+        display: flex;
+        border-bottom: 0.05rem dotted;
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+    }
+
+        .modal_settingPanel_shipdrap .starFilter label {
+            font-size: 4vw;
+            width: 12%;
+            height: 6vw;
+            line-height: 6vw;
+            text-align: center;
+            margin: 0 1%;
+        }
+
+            .modal_settingPanel_shipdrap .starFilter label.active {
+                background: #fb7299;
+                color: #fff;
+            }
+
+    .modal_settingPanel_shipdrap .node {
+        margin-bottom: 5vw;
+    }
+
+        .modal_settingPanel_shipdrap .node .list {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+            .modal_settingPanel_shipdrap .node .list label {
+                width: 25%;
+                font-size: 4vw;
+                height: 5vw;
+                line-height: 5vw;
+                padding-right: 1vw;
+                overflow: hidden;
+                text-align: left;
+            }
+
+                .modal_settingPanel_shipdrap .node .list label.no {
+                    color: #ba64ea;
+                    font-weight: bolder;
+                }
+/*自动分解设置*/
+.modal_missionPanel_setAutoDismantle {
+}
+
+    .modal_missionPanel_setAutoDismantle h2.tip {
+        line-height: 8vw;
+        font-size: 4vw;
+    }
+
+    .modal_missionPanel_setAutoDismantle .modal-body {
+        padding-top: 2.5vw;
+        position: relative;
+    }
+
+    .modal_missionPanel_setAutoDismantle .checkPanel {
+    }
+
+        .modal_missionPanel_setAutoDismantle .checkPanel h2 {
+            font-size: 6vw;
+            height: 10vw;
+            line-height: 10vw;
+        }
+
+
+        .modal_missionPanel_setAutoDismantle .checkPanel .order {
+            font-size: 3vw;
+            height: 5vw;
+            line-height: 4vw;
+        }
+
+        .modal_missionPanel_setAutoDismantle .checkPanel dl {
+            height: 10.5vw;
+            position: relative;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+
+            .modal_missionPanel_setAutoDismantle .checkPanel dl dd {
+                width: 9.5vw;
+                text-align: center;
+                height: 9.5vw;
+                line-height: 8.5vw;
+                font-size: 3.6vw;
+                margin-right: 2vw;
+                margin-bottom: 2vw;
+                background: #fff;
+                color: #fb7299;
+                border: 0.05rem solid #fb7299;
+                -moz-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -moz-animation-duration: 0.6s;
+                -o-animation-duration: 0.6s;
+                -webkit-animation-duration: 0.6s;
+                animation-duration: 0.6s;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+
+
+        .modal_missionPanel_setAutoDismantle .checkPanel:last-child {
+            margin-top: 3vw;
+        }
+
+    .modal_missionPanel_setAutoDismantle .disNumber {
+        height: 10vw;
+        line-height: 10vw;
+        font-size: 4.8vw;
+    }
+
+
+
+    .modal_missionPanel_setAutoDismantle .md-checkbox {
+        margin-top: 1vw;
+    }
+/*自动强化设置*/
+.modal_missionPanel_setAutoStrengthen {
+}
+
+    .modal_missionPanel_setAutoStrengthen h2.tip {
+        line-height: 8vw;
+        font-size: 4vw;
+    }
+
+    .modal_missionPanel_setAutoStrengthen .modal-body {
+        padding-top: 2.5vw;
+    }
+
+    .modal_missionPanel_setAutoStrengthen .checkPanel {
+        display: flex;
+        margin-bottom: 0.5vw;
+    }
+
+        .modal_missionPanel_setAutoStrengthen .checkPanel .name {
+            font-size: 4vw;
+            height: 10vw;
+        }
+
+            .modal_missionPanel_setAutoStrengthen .checkPanel .name label {
+                height: 6vw;
+                line-height: 6vw;
+                font-weight: bolder;
+            }
+
+            .modal_missionPanel_setAutoStrengthen .checkPanel .name .order {
+                font-size: 3vw;
+                height: 4vw;
+            }
+
+        .modal_missionPanel_setAutoStrengthen .checkPanel dl {
+            height: 10vw;
+            padding-left: 1vw;
+            position: relative;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            display: flex;
+        }
+
+            .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+                width: 9vw;
+                text-align: center;
+                height: 9vw;
+                line-height: 8vw;
+                font-size: 3.5vw;
+                font-weight: bolder;
+                margin-right: 1vw;
+                background: #fff;
+                color: #fb7299;
+                border: 0.05rem solid #fb7299;
+                -moz-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -moz-animation-duration: 0.6s;
+                -o-animation-duration: 0.6s;
+                -webkit-animation-duration: 0.6s;
+                animation-duration: 0.6s;
+            }
+
+                .modal_missionPanel_setAutoStrengthen .checkPanel dl dd.disabled {
+                    color: #c3c1c1 !important;
+                    font-weight: normal;
+                    border-color: #c3c1c1 !important;
+                }
+
+
+        .modal_missionPanel_setAutoStrengthen .checkPanel:last-child {
+            margin-top: 3vw;
+        }
+
+
+
+    .modal_missionPanel_setAutoStrengthen .redirect {
+        position: absolute;
+        right: 10vw;
+        top: 11vw;
+    }
+
+    .modal_missionPanel_setAutoStrengthen .disNumber {
+        height: 10vw;
+        line-height: 10vw;
+        font-size: 4.8vw;
+    }
+
+    .modal_missionPanel_setAutoStrengthen .mSelect {
+        display: flex;
+        align-items: center;
+    }
+
+        .modal_missionPanel_setAutoStrengthen .mSelect label {
+            padding-right: 3vw;
+            height: 10vw;
+            line-height: 10vw;
+        }
+
+        .modal_missionPanel_setAutoStrengthen .mSelect select {
+            color: #797575;
+            width: 40vw;
+            height: 8vw;
+            font-size: 4vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 2px solid #a9a9a9;
+        }
+
+    .modal_missionPanel_setAutoStrengthen .md-checkbox {
+        margin-top: 1vw;
+    }
+/*捞到指定船停止*/
+.modal_missionPanel_setStopOnGetShip {
+}
+
+    .modal_missionPanel_setStopOnGetShip h2.tip {
+        line-height: 8vw;
+        font-size: 4vw;
+    }
+
+    .modal_missionPanel_setStopOnGetShip .modal-body {
+        padding-top: 2.5vw;
+        position: relative;
+    }
+
+    .modal_missionPanel_setStopOnGetShip .md-checkbox {
+        margin-top: 1vw;
+    }
+
+    .modal_missionPanel_setStopOnGetShip .shiplist {
+    }
+
+        .modal_missionPanel_setStopOnGetShip .shiplist > h2 {
+            font-size: 5vw;
+            height: 10vw;
+            line-height: 10vw;
+        }
+
+            .modal_missionPanel_setStopOnGetShip .shiplist > h2 i {
+                margin-left: 20vw;
+            }
+
+        .modal_missionPanel_setStopOnGetShip .shiplist .list {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-top: 1vw;
+        }
+
+        .modal_missionPanel_setStopOnGetShip .shiplist .shiprow {
+            font-size: 4vw;
+            width: 30%;
+            overflow: hidden;
+            margin-right: 2%;
+            margin-bottom: 1vw;
+        }
+
+            .modal_missionPanel_setStopOnGetShip .shiplist .shiprow .type {
+                font-size: 3vw;
+                display: block;
+            }
+
+            .modal_missionPanel_setStopOnGetShip .shiplist .shiprow .name {
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: bolder;
+            }
+
+/*自动泡澡设置*/
+.modal_missionPanel_setAutoRepair {
+}
+
+    .modal_missionPanel_setAutoRepair h2.tip {
+        line-height: 8vw;
+        font-size: 4vw;
+    }
+
+    .modal_missionPanel_setAutoRepair .modal-body {
+        padding-top: 2.5vw;
+    }
+
+
+
+    .modal_missionPanel_setAutoRepair .disNumber {
+        height: 10vw;
+        line-height: 10vw;
+        font-size: 4.8vw;
+    }
+
+    .modal_missionPanel_setAutoRepair .mSelect {
+        display: flex;
+        align-items: center;
+    }
+
+        .modal_missionPanel_setAutoRepair .mSelect label {
+            padding-right: 3vw;
+            height: 10vw;
+            line-height: 10vw;
+        }
+
+        .modal_missionPanel_setAutoRepair .mSelect select {
+            color: #797575;
+            width: 40vw;
+            height: 8vw;
+            font-size: 4vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 2px solid #a9a9a9;
+        }
+
+    .modal_missionPanel_setAutoRepair .md-checkbox {
+        margin-top: 1vw;
+    }
+/*日志通知*/
+.modal_missionPanel_setNotification {
+}
+
+    .modal_missionPanel_setNotification .modal-body {
+        padding-top: 0;
+    }
+
+    .modal_missionPanel_setNotification .tip {
+        line-height: 10vw;
+        font-size: 5vw;
+    }
+
+    .modal_missionPanel_setNotification .cklist {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 4vw;
+    }
+
+        .modal_missionPanel_setNotification .cklist .md-checkbox {
+            width: 50%;
+            margin-bottom: 1vw;
+        }
+/*任务排序*/
+.modal_missionPanel_setCustomOrder {
+}
+
+    .modal_missionPanel_setCustomOrder .modal-body {
+        margin-top: 5vw;
+    }
+
+    .modal_missionPanel_setCustomOrder .gridly, .modal_missionPanel_setCustomOrder .gridly > :not(.dragging) {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+        .modal_missionPanel_setCustomOrder .gridly .brick {
+            width: 72vw;
+            margin-left: 7vw;
+            height: 10vw;
+            line-height: 10vw;
+            border: 0.07rem solid #828282;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            text-indent: 2vw;
+            overflow: hidden;
+            touch-action: none;
+        }
+/*自定义任务高级设置*/
+.modalPVEExpertSetting {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1080;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+    .modalPVEExpertSetting .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .modalPVEExpertSetting .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .modalPVEExpertSetting .modalbody {
+        position: absolute;
+        top: 15vw;
+        bottom: 12vw;
+        width: 100vw;
+        overflow: auto;
+    }
+
+    .modalPVEExpertSetting .modalbody {
+    }
+
+        .modalPVEExpertSetting .modalbody .tips {
+            padding: 1vw;
+            border-bottom: 2px solid #929292;
+            position: relative;
+        }
+
+            .modalPVEExpertSetting .modalbody .tips p {
+                font-size: 4vw;
+                height: 5vw;
+                line-height: 5vw;
+            }
+
+            .modalPVEExpertSetting .modalbody .tips .btnImportSetting {
+                position: absolute;
+                left: 69vw;
+                top: 1vw;
+                color: #f98032;
+                text-align: center;
+                font-size: 3.5vw;
+                border-radius: 1vw;
+                white-space: nowrap;
+                margin-left: 3%;
+                font-weight: bolder;
+                display: block;
+                line-height: 5vw;
+                height: 5vw;
+                display: block;
+            }
+
+        .modalPVEExpertSetting .modalbody .funcswitch {
+            display: flex;
+            justify-content: space-around;
+            padding: 1vw 0;
+        }
+
+            .modalPVEExpertSetting .modalbody .funcswitch .switch {
+                height: 8vw;
+                line-height: 8vw;
+                width: 30%;
+                display: flex;
+            }
+
+                .modalPVEExpertSetting .modalbody .funcswitch .switch label {
+                    font-size: 5vw;
+                }
+
+                .modalPVEExpertSetting .modalbody .funcswitch .switch .icons {
+                    font-size: 6vw;
+                    padding-left: 1vw;
+                }
+
+                    .modalPVEExpertSetting .modalbody .funcswitch .switch .icons i {
+                    }
+
+                        .modalPVEExpertSetting .modalbody .funcswitch .switch .icons i.fa-toggle-off {
+                            display: initial;
+                        }
+
+                        .modalPVEExpertSetting .modalbody .funcswitch .switch .icons i.fa-toggle-on {
+                            display: none;
+                        }
+
+                .modalPVEExpertSetting .modalbody .funcswitch .switch.on i.fa-toggle-off {
+                    display: none;
+                }
+
+                .modalPVEExpertSetting .modalbody .funcswitch .switch.on i.fa-toggle-on {
+                    display: initial;
+                }
+
+        .modalPVEExpertSetting .modalbody .checks {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 1vw 0;
+        }
+
+            .modalPVEExpertSetting .modalbody .checks .md-checkbox {
+                width: 48%;
+                margin-left: 1%;
+            }
+
+    .modalPVEExpertSetting .fleetlist {
+    }
+
+        .modalPVEExpertSetting .fleetlist .fleetRanks {
+            width: 100vw;
+            overflow: hidden;
+            padding: 1vw;
+        }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader {
+                height: 8vw;
+                position: relative;
+                font-weight: bold;
+                color: #ec9999;
+            }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader > div.disabled {
+                    opacity: 0.3;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo {
+                    width: 10vw;
+                }
+
+                    .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+                        width: 6vw;
+                        height: 6vw;
+                        text-align: center;
+                        background: #fb7299;
+                        color: #fff;
+                        line-height: 6vw;
+                    }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .ships {
+                    width: 40vw;
+                    height: 8vw;
+                    font-size: 4vw;
+                    line-height: 8vw;
+                    position: absolute;
+                    top: 0;
+                    left: 10vw;
+                }
+
+                    .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .ships a {
+                        color: #f37171;
+                        float: right;
+                    }
+
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .equips {
+                    width: 28vw;
+                    height: 8vw;
+                    font-size: 4vw;
+                    line-height: 8vw;
+                    position: absolute;
+                    top: 0;
+                    left: 53vw;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .repair {
+                    width: 22vw;
+                    height: 8vw;
+                    font-size: 4vw;
+                    line-height: 8vw;
+                    position: absolute;
+                    top: 0;
+                    left: 78vw;
+                }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody > div.disabled {
+                    opacity: 0.3;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships {
+                    width: 50vw;
+                    overflow: auto;
+                }
+
+                    .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl {
+                        display: flex;
+                        width: 100vw;
+                    }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd {
+                            width: 10vw;
+                            margin-left: 1vw;
+                        }
+
+                            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd.picker {
+                                height: 25vw;
+                                text-align: center;
+                                color: #737373;
+                                border: 0.05rem dotted #c7c7c7;
+                                padding-top: 2vw;
+                            }
+
+                                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd.picker i {
+                                    font-size: 7vw;
+                                }
+
+                                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd.picker label {
+                                    line-height: 5vw;
+                                    font-size: 4vw;
+                                    height: 10vw;
+                                    margin-top: 1vw;
+                                    text-align: center;
+                                    font-weight: bolder;
+                                }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .ships dl dd.picker {
+            }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd:first-child {
+                margin-left: 0;
+            }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .level {
+                font-size: 2.5vw;
+                height: 3vw;
+                line-height: 3vw;
+                overflow: hidden;
+            }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .name {
+                font-size: 2.5vw;
+                height: 4vw;
+                line-height: 4vw;
+                overflow: hidden;
+            }
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face {
+                width: 100%;
+            }
+
+            /*.modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star1 {
+                    background-image: url('/Content/images/ship_star_bg1.png');
+                    background-size: 100%;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star2 {
+                    background-image: url('/Content/images/ship_star_bg2.png');
+                    background-size: 100%;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star3 {
+                    background-image: url('/Content/images/ship_star_bg3.png');
+                    background-size: 100%;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star4 {
+                    background-image: url('/Content/images/ship_star_bg4.png');
+                    background-size: 100%;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star5 {
+                    background-image: url('/Content/images/ship_star_bg5.png');
+                    background-size: 100%;
+                }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .ships dl dd .face.star6 {
+                    background-image: url('/Content/images/ship_star_bg6.png');
+                    background-size: 100%;
+                }*/
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips {
+                width: 25vw;
+                overflow: auto;
+            }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl {
+                    display: flex;
+                    width: 100%;
+                    -ms-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    padding-top: 1vw;
+                }
+
+                    .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd {
+                        width: 10vw;
+                        margin: 1vw;
+                        height: 10vw;
+                    }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.picker {
+                            border: 0.05rem solid #9c9fa0;
+                            font-size: 8vw;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #5d5d5d;
+                        }
+
+            /*.modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star1 {
+                            background-image: url(/Content/images/eq_star_bg1_40x40.png);
+                            background-size: 100% 100%;
+                        }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star2 {
+                            background-image: url(/Content/images/eq_star_bg2_40x40.png);
+                            background-size: 100% 100%;
+                        }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star3 {
+                            background-image: url(/Content/images/eq_star_bg3_40x40.png);
+                            background-size: 100% 100%;
+                        }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star4 {
+                            background-image: url(/Content/images/eq_star_bg4_40x40.png);
+                            background-size: 100% 100%;
+                        }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star5 {
+                            background-image: url(/Content/images/eq_star_bg5_40x40.png);
+                            background-size: 100% 100%;
+                        }
+
+                        .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .equips dl dd.star6 {
+                            background-image: url(/Content/images/eq_star_bg6_40x40.png);
+                            background-size: 100% 100%;
+                        }*/
+
+            .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .repair {
+                width: 20vw;
+            }
+
+                .modalPVEExpertSetting .fleetlist .fleetRanks .rankbody .repair select {
+                    margin-top: 1vw;
+                    width: 100%;
+                    height: 7vw;
+                    border-radius: 1vw;
+                    border: 2px solid #ccc6c6;
+                    background-color: #fff;
+                    outline: none;
+                    -webkit-appearance: none;
+                    font-size: 3.5vw;
+                    text-indent: 1vw;
+                    color: #444;
+                }
+
+    .modalPVEExpertSetting .modalfoot {
+        position: absolute;
+        bottom: 0;
+        height: 12vw;
+        width: 100vw;
+        display: flex;
+    }
+
+        .modalPVEExpertSetting .modalfoot a {
+            line-height: 12vw;
+            font-size: 5vw;
+            color: #fff;
+            text-align: center;
+        }
+
+            .modalPVEExpertSetting .modalfoot a.del {
+                width: 25%;
+                background: #ff6b6b;
+            }
+
+            .modalPVEExpertSetting .modalfoot a.reset {
+                width: 25%;
+                background: #fdba6f;
+            }
+
+            .modalPVEExpertSetting .modalfoot a.save {
+                width: 50%;
+                background: #5980d0;
+            }
+
+/*主题*/
+body.miku #PartialSetting > .header,
+body.miku #PartialSetting .swapChildPageNav,
+body.miku .slideCustompveWebSelecter .modelheader,
+body.miku .modal_settingPanel_shipdrap .starFilter label.active,
+body.miku .modalPVEExpertSetting .modelheader,
+body.miku .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #39C5BB;
+}
+
+body.miku #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.miku .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.miku #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE,
+body.miku .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    color: #39C5BB;
+}
+
+body.miku #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.miku .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.miku .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    border-color: #39C5BB;
+}
+/**/
+body.tianyi #PartialSetting > .header,
+body.tianyi #PartialSetting .swapChildPageNav,
+body.tianyi .slideCustompveWebSelecter .modelheader,
+body.tianyi .modal_settingPanel_shipdrap .starFilter label.active,
+body.tianyi .modalPVEExpertSetting .modelheader,
+body.tianyi .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #4bafe2;
+}
+
+body.tianyi #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.tianyi .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.tianyi #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE,
+body.tianyi .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    color: #4bafe2;
+}
+
+body.tianyi #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.tianyi .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.tianyi .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    border-color: #4bafe2;
+}
+/**/
+body.hong #PartialSetting > .header,
+body.hong #PartialSetting .swapChildPageNav,
+body.hong .slideCustompveWebSelecter .modelheader,
+body.hong .modal_settingPanel_shipdrap .starFilter label.active,
+body.hong .modalPVEExpertSetting .modelheader,
+body.hong .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #dd665b;
+}
+
+body.hong #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.hong .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.hong #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE,
+body.hong .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    color: #dd665b;
+}
+
+body.hong #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.hong .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.hong .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    border-color: #dd665b;
+}
+/**/
+body.green #PartialSetting > .header,
+body.green #PartialSetting .swapChildPageNav,
+body.green .slideCustompveWebSelecter .modelheader,
+body.green .modal_settingPanel_shipdrap .starFilter label.active,
+body.green .modalPVEExpertSetting .modelheader,
+body.green .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #33a133;
+}
+
+body.green #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.green .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.green #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE,
+body.green .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    color: #33a133;
+}
+
+body.green #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.green .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.green .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    border-color: #33a133;
+}
+/**/
+body.cheng #PartialSetting > .header,
+body.cheng #PartialSetting .swapChildPageNav,
+body.cheng .slideCustompveWebSelecter .modelheader,
+body.cheng .modal_settingPanel_shipdrap .starFilter label.active,
+body.cheng .modalPVEExpertSetting .modelheader,
+body.cheng .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #fb8633;
+}
+
+body.cheng #PartialSetting #panel-custompve .customPve .map .reSetPath,
+body.cheng .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.cheng #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE,
+body.cheng .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    color: #fb8633;
+}
+
+    body.cheng #PartialSetting #panel-custompve .customPve .map .reSetPath,
+    body.cheng .modal_missionPanel_setAutoDismantle .checkPanel dl dd main,
+    body.cheng .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+        border-color: #fb8633;
+    }
+/*夜间模式*/
+body.night #PartialSetting > .header,
+body.night .modalPVEExpertSetting .modelheader,
+body.night .modalPVEExpertSetting .fleetlist .fleetRanks .rankheader .rankNo span {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night #PartialSetting .swapChildPageNav {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+    body.night #PartialSetting .swapChildPageNav ul li.active:after,
+    body.night .modal_settingPanel_shipdrap .starFilter label.active {
+        background: #a37d7d;
+    }
+
+body.night #PartialSetting .ini_checklist .check-cell .sayTip {
+    color: #797e83;
+}
+
+body.night #PartialSetting #panel-custompve .topactions .btnSelectCustomSelecter,
+body.night #PartialSetting #panel-custompve .topactions .btnCustomOrder {
+    color: #98a6b0;
+    border-color: #7e8082;
+}
+
+body.night #PartialSetting .swapChildPageNav .splitLine {
+    background: #9e9a9a;
+}
+
+body.night #PartialSetting #panel-custompve .topactions .btnOpenWebSelecter,
+body.night #PartialSetting #panel-pvequeue .pvequeue .queueNodelist .queuenode .nodesetting .workActions a.modifyPVE {
+    color: #9ba796;
+    border-color: #8b9189;
+}
+
+body.night #PartialSetting #panel-custompve .topactions .btnAddCustomSelecter {
+    opacity: 0.4;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .workname #WorkName {
+    background: #a8a5a5;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .workname #btnSaveSet {
+    color: #98a8b3;
+    border-color: #657784;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .workname #btnDeleteSet {
+    color: #b4a4a4;
+    border-color: #8a8381;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .mappanel .tip {
+    color: #c9acb0;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .mappanel .listMapEnemy,
+body.night #PartialSetting #panel-custompve .customPve .mappanel .listDraps {
+    color: #b64e48;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .map .reSetPath {
+    color: #9e6172;
+    background: #201c1c;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .mappanel .name {
+    color: #6a85a0;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .repairLevel #RepairLevel {
+    border-color: #b6b6b6;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .userRemark #UserRemark {
+    border-color: #b6b6b6;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .map {
+    opacity: 0.7;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .pathslist .node {
+    opacity: 0.6;
+}
+
+body.night #PartialSetting #panel-custompve .customPve {
+    border-color: #85888e;
+}
+
+body.night .slideCustompveWebSelecter .modelheader {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night .slideCustompveWebSelecter .searchBar {
+    background-color: #424242;
+    border-color: #737373;
+}
+
+    body.night .slideCustompveWebSelecter .searchBar input {
+        background-color: #bebdbd;
+    }
+
+body.night #CustompveWebSelecter {
+    background-color: #424242;
+}
+
+body.night .slideCustompveWebSelecter .custompvelist .custompve .hd dd.action a {
+    opacity: 0.5;
+}
+
+body.night .modal_missionPanel_setAutoDismantle .checkPanel dl dd,
+body.night .modal_missionPanel_setAutoStrengthen .checkPanel dl dd {
+    border-color: #6d6d6d;
+    background: #727272;
+    color: #b2b2b2;
+}
+
+body.night #PartialSetting .ini_checklist .check-cell .config {
+    background: #727272;
+    color: #b2b2b2;
+}
+
+body.night #PartialSetting #panel-custompve .customPve .repairLevel a {
+    opacity: 0.6;
+}
+
+body.night .modalPVEExpertSetting .modalbody,
+body.night .modalPVEExpertSetting .modalfoot {
+    opacity: 0.8;
+}

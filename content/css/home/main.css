@@ -1,0 +1,867 @@
+#PartialViewPanel {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 20vw;
+    left: 0;
+    width: 100%;
+}
+
+    #PartialViewPanel > .partialContext {
+        position: relative;
+        height: 100%;
+    }
+
+#PartialViewFooter {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-top: 1px solid #adadad;
+    position: absolute;
+    bottom: 0vw;
+    left: 0;
+    width: 100%;
+    padding: 0 0;
+    overflow: hidden;
+    z-index: 9;
+}
+
+    #PartialViewFooter .nav {
+        width: 25%;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        color: #9b9b9b;
+        float: left;
+    }
+
+        #PartialViewFooter .nav.active {
+            color: #fb7299;
+        }
+
+        #PartialViewFooter .nav .icon {
+            font-size: 9vw;
+            padding-top: 2vw;
+        }
+
+        #PartialViewFooter .nav .text {
+            font-size: 5vw;
+            margin-top: -1vw;
+        }
+
+/*slideShipPicker*/
+.slideShipPicker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1080;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+
+    .slideShipPicker .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .slideShipPicker .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .slideShipPicker .searchBar {
+        height: 15vw;
+        line-height: 15vw;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px #eaedeb solid;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 15vw;
+    }
+
+        .slideShipPicker .searchBar label {
+            width: 20vw;
+            text-align: center;
+        }
+
+        .slideShipPicker .searchBar input {
+            width: 50vw;
+            height: 100%;
+            border-radius: 1vw;
+            border: 2px solid #ccc6c6;
+            background-color: #fff;
+            outline: none;
+            -webkit-appearance: none;
+            font-size: 5vw;
+            text-indent: 2vw;
+            color: #ef7d7d;
+        }
+
+        .slideShipPicker .searchBar .changeRange {
+            color: #fb7299;
+            width: 25vw;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.05rem solid #fb7299;
+            margin-left: 2vw;
+            height: 10vw;
+            font-weight: bolder;
+            line-height: 9.5vw;
+        }
+
+    .slideShipPicker.range .searchBar .changeRange {
+        display: none;
+    }
+
+    .slideShipPicker .searchBar .cancel {
+        color: #fb7299;
+        width: 8vw;
+        text-align: center;
+        font-size: 6vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        margin-left: 2vw;
+        height: 10vw;
+        font-weight: bolder;
+        line-height: 9vw;
+        display: none;
+    }
+
+    .slideShipPicker .searchBar .submit {
+        color: #fb7299;
+        width: 16vw;
+        text-align: center;
+        font-size: 4vw;
+        border-radius: 1vw;
+        white-space: nowrap;
+        border: 0.05rem solid #fb7299;
+        margin-left: 1vw;
+        height: 10vw;
+        font-weight: bolder;
+        line-height: 9vw;
+        display: none;
+    }
+
+    .slideShipPicker.range .searchBar .cancel,
+    .slideShipPicker.range .searchBar .submit {
+        display: block;
+    }
+    /*.slideShipPicker .shiplistpanel*/
+    .slideShipPicker .shiplistpanel {
+        margin: 1vw auto;
+        /*flex-shrink: 4;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 96vw;
+        position: absolute;
+        left: 2vw;
+        top: 30vw;
+        bottom: 0;
+    }
+
+    .slideShipPicker .shiplist {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+        .slideShipPicker .shiplist .reading {
+            text-align: center;
+            position: absolute;
+            top: 5vw;
+            left: 42vw;
+        }
+
+
+        .slideShipPicker .shiplist .reading {
+            width: 2vw;
+            height: 2vw;
+            border-radius: 50%;
+            -webkit-animation: typing 1s linear infinite alternate;
+            -moz-animation: Typing 1s linear infinite alternate;
+            -ms-animation: Typing 1s linear infinite alternate;
+            animation: typing 1s linear infinite alternate;
+        }
+
+        .slideShipPicker .shiplist .shipcell {
+            width: 15vw;
+            height: 37vw;
+            text-align: center;
+            padding: 0.05rem;
+            background: #ebf5ee;
+            margin: 0.05rem 0.05rem;
+        }
+
+            .slideShipPicker .shiplist .shipcell .bd {
+                height: 27vw;
+                position: relative;
+                margin-bottom: 1vw;
+            }
+
+            .slideShipPicker .shiplist .shipcell.loweffect .bd {
+                height: 20vw;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .img {
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+            }
+
+                .slideShipPicker .shiplist .shipcell .bd .img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .slideShipPicker .shiplist .shipcell .bd .img .fa {
+                    font-size: 8vw;
+                    line-height: 20vw;
+                    color: #8e8e8e;
+                }
+
+            .slideShipPicker .shiplist .shipcell .bd .status {
+                position: absolute;
+                bottom: 4vw;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                background: #fb7299;
+                font-size: 3vw;
+                height: 4vw;
+                line-height: 4vw;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .fleetid {
+                position: absolute;
+                right: 2px;
+                top: 2px;
+                width: 4vw;
+                height: 4vw;
+                line-height: 4vw;
+                color: #fff;
+                background: #fb7299;
+                font-size: 3vw;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .locked {
+                position: absolute;
+                left: 0.01rem;
+                top: 0.01rem;
+                font-size: 3vw;
+                color: #e05858;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .type {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                font-size: 3vw;
+                color: #fb7299;
+                background: #fff;
+                padding: 1px;
+                width: 7vw;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .hp {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 3vw;
+                color: #fb7299;
+                padding: 1px;
+                width: 7vw;
+            }
+
+                .slideShipPicker .shiplist .shipcell .bd .hp .progress {
+                    width: 100%;
+                    margin: 0;
+                    padding: 1px;
+                    background: rgba(151, 151, 151, 1);
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                    .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar {
+                        position: relative;
+                        height: 1.5vw;
+                        -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        background-color: #f63a0f;
+                        width: 0%;
+                    }
+
+                        .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:before, .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:before {
+                            bottom: 0;
+                            /*background: url("../img/stripes.png") 0 0 repeat;*/
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                        .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                            z-index: 2;
+                            bottom: 45%;
+                            border-radius: 4px;
+                            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                        }
+
+            .slideShipPicker .shiplist .shipcell .bd .select {
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .cover {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #2d2d2d;
+                opacity: 0.8;
+            }
+
+            .slideShipPicker .shiplist .shipcell .bd .selectIndex {
+                position: absolute;
+                top: 50%;
+                bottom: 0;
+                left: 50%;
+                right: 0;
+                width: 8vw;
+                height: 8vw;
+                line-height: 7vw;
+                border-radius: 8vw;
+                color: #fff;
+                text-align: center;
+                background: #0094ff;
+                margin-left: -4vw;
+                margin-top: -4vw;
+                border: 0.05rem solid #066db7;
+            }
+
+            .slideShipPicker .shiplist .shipcell .name {
+                font-size: 3vw;
+                line-height: 4vw;
+                height: 4vw;
+                white-space: nowrap;
+                overflow: hidden;
+                font-weight: bolder;
+            }
+
+            .slideShipPicker .shiplist .shipcell .level {
+                font-size: 3vw;
+                line-height: 4vw;
+                height: 4vw;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+/*slideShipPicker*/
+.slideEquipPicker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1089;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+
+    .slideEquipPicker .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .slideEquipPicker .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .slideEquipPicker .searchBar {
+        height: 15vw;
+        line-height: 15vw;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px #eaedeb solid;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 15vw;
+    }
+
+        .slideEquipPicker .searchBar label {
+            width: 20vw;
+            text-align: center;
+        }
+
+        .slideEquipPicker .searchBar input {
+            width: 72vw;
+            height: 100%;
+            border-radius: 1vw;
+            border: 2px solid #ccc6c6;
+            background-color: #fff;
+            outline: none;
+            -webkit-appearance: none;
+            font-size: 5vw;
+            text-indent: 2vw;
+            color: #ef7d7d;
+        }
+
+    .slideEquipPicker .equiplist {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 1vw auto;
+        flex-shrink: 4;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 96vw;
+        position: absolute;
+        left: 2vw;
+        top: 30vw;
+        bottom: 0;
+    }
+
+        .slideEquipPicker .equiplist .reading {
+            text-align: center;
+            position: absolute;
+            top: 5vw;
+            left: 42vw;
+        }
+
+
+        .slideEquipPicker .equiplist .reading {
+            width: 2vw;
+            height: 2vw;
+            border-radius: 50%;
+            -webkit-animation: typing 1s linear infinite alternate;
+            -moz-animation: Typing 1s linear infinite alternate;
+            -ms-animation: Typing 1s linear infinite alternate;
+            animation: typing 1s linear infinite alternate;
+        }
+
+        .slideEquipPicker .equiplist .equipcell {
+            width: 15vw;
+            text-align: center;
+            padding: 0.5vw;
+            background: #ebf5ee;
+            margin: 0.5vw 0.5vw;
+            height: 25vw;
+        }
+
+            .slideEquipPicker .equiplist .equipcell.unload {
+                font-size: 5vw;
+                line-height: 23vw;
+                font-weight: bolder;
+                border: 1vw solid #c7cacc;
+            }
+
+            .slideEquipPicker .equiplist .equipcell .bd {
+                height: 15vw;
+                position: relative;
+            }
+
+                .slideEquipPicker .equiplist .equipcell .bd .img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                }
+
+                    .slideEquipPicker .equiplist .equipcell .bd .img img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                .slideEquipPicker .equiplist .equipcell .bd .number {
+                    position: absolute;
+                    bottom: 0vw;
+                    right: 0;
+                    color: #fff;
+                    background: #fb7299;
+                    font-size: 3vw;
+                    height: 4vw;
+                    line-height: 4vw;
+                    padding: 0 1vw;
+                }
+
+                .slideEquipPicker .equiplist .equipcell .bd .locked {
+                    position: absolute;
+                    left: 0;
+                    top: 0.05rem;
+                    width: 5vw;
+                    height: 5vw;
+                    color: #fb7299;
+                    font-size: 3.5vw;
+                    line-height: 5vw;
+                }
+
+            .slideEquipPicker .equiplist .equipcell .name {
+                font-size: 3vw;
+                line-height: 4vw;
+                height: 8vw;
+                overflow: hidden;
+                text-align: center;
+                /* align-items: center; */
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                margin-top: 1vw;
+                font-weight: bolder;
+            }
+
+
+@-webkit-keyframes typing {
+    0% {
+        background-color: rgba(197,58,58, 1);
+        box-shadow: 4vw 0px 0px 0px rgba(197,255,255,0.2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    25% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    75% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,0.2), 8vw 0px 0px 0px rgba(197,58,58,1);
+    }
+}
+
+@-moz-keyframes typing {
+    0% {
+        background-color: rgba(197,58,58, 1);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,0.2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    25% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    75% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,0.2), 8vw 0px 0px 0px rgba(197,58,58,1);
+    }
+}
+
+@keyframes typing {
+    0% {
+        background-color: rgba(197,58,58, 1);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,0.2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    25% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,2), 8vw 0px 0px 0px rgba(197,58,58,0.2);
+    }
+
+    75% {
+        background-color: rgba(197,58,58, 0.4);
+        box-shadow: 4vw 0px 0px 0px rgba(197,58,58,0.2), 8vw 0px 0px 0px rgba(197,58,58,1);
+    }
+}
+/*教学*/
+.appteaching {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+    .appteaching .learnOut {
+        color: #e7e7e7;
+        border: 1vw solid;
+        width: 28vw;
+        text-align: center;
+        font-size: 5vw;
+        height: 10vw;
+        line-height: 8vw;
+        position: absolute;
+        top: 2vw;
+        left: 70vw;
+    }
+
+    .appteaching .node {
+    }
+/*主题*/
+body.miku #PartialViewFooter .nav.active,
+body.miku .slideEquipPicker .equiplist .equipcell .bd .locked,
+body.miku .slideShipPicker .shiplist .shipcell .bd .type,
+body.miku .slideShipPicker .searchBar .changeRange,
+body.miku .slideShipPicker .searchBar .cancel,
+body.miku .slideShipPicker .searchBar .submit {
+    color: #39C5BB;
+}
+
+body.miku .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.miku .modal_areaPanel_shipdocks .shipdetail .tactics,
+body.miku .slideShipPicker .searchBar .changeRange,
+body.miku .slideShipPicker .searchBar .submit {
+    border-color: #39C5BB;
+}
+
+body.miku .slideEquipPicker .modelheader,
+body.miku .slideEquipPicker .equiplist .equipcell .bd .number,
+body.miku .slideShipPicker .modelheader,
+body.miku .slideShipPicker .shiplist .shipcell .bd .fleetid {
+    background-color: #39C5BB;
+}
+/**/
+body.tianyi #PartialViewFooter .nav.active,
+body.tianyi .slideEquipPicker .equiplist .equipcell .bd .locked,
+body.tianyi .slideShipPicker .shiplist .shipcell .bd .type,
+body.tianyi .slideShipPicker .searchBar .changeRange,
+body.tianyi .slideShipPicker .searchBar .cancel,
+body.tianyi .slideShipPicker .searchBar .submit {
+    color: #4bafe2;
+}
+
+body.tianyi .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.tianyi .modal_areaPanel_shipdocks .shipdetail .tactics,
+body.tianyi .slideShipPicker .searchBar .changeRange,
+body.tianyi .slideShipPicker .searchBar .submit {
+    border-color: #4bafe2;
+}
+
+body.tianyi .slideEquipPicker .modelheader,
+body.tianyi .slideEquipPicker .equiplist .equipcell .bd .number,
+body.tianyi .slideShipPicker .modelheader,
+body.tianyi .slideShipPicker .shiplist .shipcell .bd .fleetid {
+    background-color: #4bafe2;
+}
+/**/
+body.hong #PartialViewFooter .nav.active,
+body.hong .slideEquipPicker .equiplist .equipcell .bd .locked,
+body.hong .slideShipPicker .shiplist .shipcell .bd .type,
+body.hong .slideShipPicker .searchBar .changeRange,
+body.hong .slideShipPicker .searchBar .cancel,
+body.hong .slideShipPicker .searchBar .submit {
+    color: #dd665b;
+}
+
+body.hong .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.hong .modal_areaPanel_shipdocks .shipdetail .tactics,
+body.hong .slideShipPicker .searchBar .changeRange,
+body.hong .slideShipPicker .searchBar .submit {
+    border-color: #dd665b;
+}
+
+body.hong .slideEquipPicker .modelheader,
+body.hong .slideEquipPicker .equiplist .equipcell .bd .number,
+body.hong .slideShipPicker .modelheader,
+body.hong .slideShipPicker .shiplist .shipcell .bd .fleetid {
+    background-color: #dd665b;
+}
+/**/
+body.green #PartialViewFooter .nav.active,
+body.green .slideEquipPicker .equiplist .equipcell .bd .locked,
+body.green .slideShipPicker .shiplist .shipcell .bd .type,
+body.green .slideShipPicker .searchBar .changeRange,
+body.green .slideShipPicker .searchBar .cancel,
+body.green .slideShipPicker .searchBar .submit {
+    color: #33a133;
+}
+
+body.green .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.green .modal_areaPanel_shipdocks .shipdetail .tactics,
+body.green .slideShipPicker .searchBar .changeRange,
+body.green .slideShipPicker .searchBar .submit {
+    border-color: #33a133;
+}
+
+body.green .slideEquipPicker .modelheader,
+body.green .slideEquipPicker .equiplist .equipcell .bd .number,
+body.green .slideShipPicker .modelheader,
+body.green .slideShipPicker .shiplist .shipcell .bd .fleetid {
+    background-color: #33a133;
+}
+/**/
+body.cheng #PartialViewFooter .nav.active,
+body.cheng .slideEquipPicker .equiplist .equipcell .bd .locked,
+body.cheng .slideShipPicker .shiplist .shipcell .bd .type,
+body.cheng .slideShipPicker .searchBar .changeRange,
+body.cheng .slideShipPicker .searchBar .cancel,
+body.cheng .slideShipPicker .searchBar .submit {
+    color: #fb8633;
+}
+
+body.cheng .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.cheng .modal_areaPanel_shipdocks .shipdetail .tactics,
+body.cheng .slideShipPicker .searchBar .changeRange,
+body.cheng .slideShipPicker .searchBar .submit {
+    border-color: #fb8633;
+}
+
+body.cheng .slideEquipPicker .modelheader,
+body.cheng .slideEquipPicker .equiplist .equipcell .bd .number,
+body.cheng .slideShipPicker .modelheader,
+body.cheng .slideShipPicker .shiplist .shipcell .bd .fleetid {
+    background-color: #fb8633;
+}
+/*夜间模式*/
+body.night #PartialViewFooter {
+    background: #9b9b9b;
+}
+
+    body.night #PartialViewFooter .nav {
+        color: #6c6c6c;
+    }
+
+        body.night #PartialViewFooter .nav.active {
+            color: #403b3b;
+        }
+
+body.night .slideShipPicker .modelheader,
+body.night .slideEquipPicker .modelheader {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night .modal_areaPanel_shipdocks .shipdetail dl.opts,
+body.night .modal_areaPanel_shipdocks .shipdetail .tactics {
+    border-color: #585858;
+}
+
+body.night .modal_areaPanel_shipdocks .shipdetail .equipments {
+    opacity: 0.8;
+}
+
+body.night .modal-header .close {
+    color: #f1f1f1;
+}
+
+body.night .slideShipPicker .searchBar,
+body.night .slideEquipPicker .searchBar {
+    background-color: #424242;
+    border-color: #737373;
+}
+
+    body.night .slideShipPicker .searchBar input,
+    body.night .slideEquipPicker .searchBar input {
+        background-color: #bebdbd;
+    }
+
+body.night .slideShipPicker,
+body.night .slideEquipPicker {
+    background: #282828;
+}
+
+    body.night .slideEquipPicker .equiplist {
+        opacity: 0.7;
+    }
+
+    body.night .slideShipPicker .shiplist {
+        opacity: 0.7;
+    }
+
+    body.night .slideShipPicker .searchBar .changeRange,
+    body.night .slideShipPicker .searchBar .cancel,
+    body.night .slideShipPicker .searchBar .submit {
+        opacity: 0.5;
+    }
+/*iosX*/
+body.iosx .slideShipPicker .modelheader {
+    height: 20vw;
+    line-height: 28vw;
+}
+
+    body.iosx .slideShipPicker .modelheader a {
+        height: 20vw;
+        line-height: 28vw;
+    }
+
+body.iosx .slideShipPicker .searchBar {
+    top: 20vw;
+}
+
+body.iosx .slideShipPicker .shiplist {
+    top: 35vw;
+}
+
+
+body.iosx .slideEquipPicker .modelheader {
+    height: 20vw;
+    line-height: 28vw;
+}
+
+    body.iosx .slideEquipPicker .modelheader a {
+        height: 20vw;
+        line-height: 28vw;
+    }
+
+body.iosx .slideEquipPicker .searchBar {
+    top: 20vw;
+}
+
+body.iosx .slideEquipPicker .equiplist {
+    top: 35vw;
+}

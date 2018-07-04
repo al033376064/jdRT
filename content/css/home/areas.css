@@ -1,0 +1,4161 @@
+
+
+#PartialAreas > .header {
+    height: 15vw;
+    line-height: 20vw;
+    font-size: 6vw;
+    text-align: center;
+    background: #fb7299;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#PartialAreas .context {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 15vw;
+    bottom: 0;
+    width: 100%;
+}
+
+    /*正文*/
+
+
+    #PartialAreas .context .areaPanelFaces {
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 3vw;
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+        #PartialAreas .context .areaPanelFaces .faces-list {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+            #PartialAreas .context .areaPanelFaces .faces-list .faces-cell {
+                width: 25%;
+                text-align: center;
+                padding: 3vw 0;
+            }
+
+                #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font {
+                    font-size: 8vw;
+                    height: 16vw;
+                    line-height: 16vw;
+                    color: #fb72a0;
+                }
+
+                #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.img {
+                    height: 16vw;
+                    line-height: 16vw;
+                }
+
+                    #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.img img {
+                        height: 11vw;
+                        width: 11vw;
+                    }
+
+                #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceName {
+                    font-size: 4vw;
+                    height: 4vw;
+                    line-height: 4vw;
+                    color: #7f7f7f;
+                }
+
+    #PartialAreas .context .areaPanelLists {
+    }
+
+    #PartialAreas .context .areaPanel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 19;
+        -moz-transform: translate3d(100%,0,0);
+        -ms-transform: translate3d(100%,0,0);
+        -o-transform: translate3d(100%,0,0);
+        -webkit-transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0);
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -moz-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+    }
+
+        #PartialAreas .context .areaPanel .areaheader {
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 6vw;
+            text-align: center;
+            background: #fb7299;
+            color: #fff;
+            font-weight: bolder;
+            letter-spacing: 1vw;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+            #PartialAreas .context .areaPanel .areaheader a {
+                display: block;
+                width: 15vw;
+                height: 15vw;
+                line-height: 20vw;
+                font-size: 8vw;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+        #PartialAreas .context .areaPanel .areaContext {
+            position: absolute;
+            left: 0;
+            top: 15vw;
+            bottom: 0;
+            right: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+            #PartialAreas .context .areaPanel .areaContext.groups {
+                overflow: hidden;
+            }
+    /*澡堂*/
+    #PartialAreas .context .areaPanel_bath .areaContext .headertips {
+        font-size: 5vw;
+        padding-left: 4vw;
+        padding-top: 4vw;
+    }
+
+    #PartialAreas .context .areaPanel_bath .areaContext .docklists {
+        margin: 4vw;
+        border: 0.1rem dotted #0094ff;
+        padding: 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell {
+            background: #e1f0fa;
+            margin-top: 2vw;
+            height: 16vw;
+            position: relative;
+        }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell:first-child {
+                margin-top: 0;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .selectRepairShip {
+                position: absolute;
+                right: 5vw;
+                top: 4vw;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .quickRepair {
+                position: absolute;
+                right: 5vw;
+                top: 4vw;
+                color: #0094ff;
+                border: 0.1rem solid #62b9f8;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail {
+                display: flex;
+                justify-content: center;
+                font-size: 3.5vw;
+                text-align: center;
+                padding: 0.5vw 0;
+                height: 16vw;
+                width: 60vw;
+            }
+
+                #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail dd {
+                    width: 20vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    -webkit-box-flex: 1;
+                    flex: 1;
+                    padding: 0 1vw;
+                    line-height: 6vw;
+                    padding-top: 2vw;
+                }
+
+                #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime {
+                    line-height: 12vw;
+                    color: #ea4d57;
+                }
+
+    #PartialAreas .context .areaPanel_bath .areaContext .shiplist {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 92vw;
+        justify-content: space-between;
+        margin: 3vw auto;
+    }
+
+        #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow {
+            width: 100%;
+            text-align: center;
+            padding: 0.5vw;
+            background: #ebf5ee;
+            margin: 0.5vw 0;
+            display: flex;
+        }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow.IsRepairing {
+                color: #a6a6a6;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow .check-cell {
+                width: 11vw;
+                padding: 1vw;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow .ship {
+                display: flex;
+                justify-content: center;
+                font-size: 3.5vw;
+                text-align: center;
+                padding: 0.5vw 0;
+                width: 80vw;
+                flex-wrap: wrap;
+                /*justify-content: flex-end;*/
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow:last-child .ship {
+                border-bottom: none;
+            }
+
+            #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow .ship dd {
+                padding: 0 1vw;
+                width: 20vw;
+                line-height: 5vw;
+                height: 11vw;
+                overflow: hidden;
+                font-size: 3.8vw;
+                padding: 0.5vw 0;
+            }
+
+                #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow .ship dd.name {
+                    font-weight: bolder;
+                }
+
+                #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow .ship dd.center {
+                    line-height: 10vw;
+                }
+    /*战役*/
+    #PartialAreas .context .areaPanel_zhanyi .areaContext > .resource {
+        display: flex;
+        text-align: center;
+        font-size: 3.5vw;
+        justify-content: center;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 2vw;
+        padding: 3vw 0;
+    }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext > .resource dd {
+            width: 20%;
+        }
+
+    #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead {
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0;
+        margin: 0 2vw;
+        border-bottom: 0.1rem solid #99a2a9;
+    }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead label {
+            width: 25%;
+            height: 10vw;
+            font-size: 5vw;
+            line-height: 10vw;
+            margin-right: 3vw;
+        }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead #ZhanYiSelecter {
+            color: #57575f;
+            width: 50%;
+            height: 10vw;
+            font-size: 5vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 0.1rem solid #8e93eb;
+            background: #fff;
+        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead #ZhanYiSelecter[disabled] {
+                background: #efe7e7;
+                border-color: #caccf4;
+                color: #afafbb;
+            }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead > a {
+            color: #0094ff;
+            width: 25%;
+            display: block;
+            text-align: center;
+            float: left;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #66b0e6;
+            margin-left: 3%;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 8vw;
+        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead > a.cancelfight {
+                color: #fb7299;
+                border: 0.1rem solid #fb7299;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead > a.disabled {
+                color: #b7dcf7;
+                border-color: #d1e2ef;
+            }
+
+    /*#PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist {
+        margin: 2vw;
+        border-radius: 6px;
+        border: 3px solid #a7b7d7;
+        padding: 2vw;
+        position: relative;
+        height: 86vw;
+        overflow: hidden;
+    }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow {
+            height: 12vw;
+            width: 130vw;
+            overflow: hidden;
+            margin-left: 0vw;
+            margin-top: 1vw;
+            position: relative;
+        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .shipstatus {
+                position: absolute;
+                left: 0.6rem;
+                bottom: 0.01rem;
+                font-size: 0.25rem;
+                z-index: 9;
+                background: #e23272;
+                color: #fff;
+                padding: 0 0.1rem;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .ship {
+                display: flex;
+                justify-content: center;
+                font-size: 3.5vw;
+                text-align: center;
+                padding: 0.5vw 0;
+                height: 12vw;
+                width: 90vw;
+                float: left;
+                border-bottom: 1px dotted #000000;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow dd {
+                padding: 0 1vw;
+                width: 17vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow dd.name {
+                    width: 20vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    -webkit-box-flex: 1;
+                    flex: 1;
+                    font-weight: bolder;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .actions {
+                float: right;
+                width: 40vw;
+                height: 10vw;
+                line-height: 10vw;
+                margin-top: 1vw;
+                padding-left: 5vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .actions > a.modify {
+                    display: block;
+                    width: 20vw;
+                    float: left;
+                    font-size: 4vw;
+                    text-align: center;
+                    background: #5097d9;
+                    color: #fff;
+                    height: 100%;
+                }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .actions > a.del {
+                    display: block;
+                    width: 15vw;
+                    float: left;
+                    font-size: 4vw;
+                    text-align: center;
+                    background: #f45454;
+                    color: #fff;
+                }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .actionRow {
+            height: 12vw;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px dotted #000000;
+            margin-top: 1vw;
+        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .actionRow dl.action {
+                line-height: 11vw;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .actionRow dl.action dd {
+                    font-size: 5vw;
+                    width: 25vw;
+                }*/
+    #PartialAreas .context .areaPanel_zhanyi .areaContext .currentFleet {
+        padding: 1vw;
+        -moz-border-radius: 1vw;
+        -webkit-border-radius: 1vw;
+        border-radius: 2vw;
+        margin-top: 1vw;
+        border: 1vw solid #bbd4ef;
+        margin: 2vw 2vw;
+    }
+
+    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5vw;
+        height: 65vw;
+    }
+
+        #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell {
+            width: 15vw;
+            text-align: center;
+            padding: 0.5vw;
+            background: #ebf5ee;
+            height: 65vw;
+        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd {
+                width: 100%;
+                border: 0.05rem solid #c3c3c3;
+                position: relative;
+                height: 25vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell.remould .bd {
+                border-color: #d09e14;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell.married .bd {
+                border-color: #adc0f9;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .img {
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .img .fa {
+                    font-size: 8vw;
+                    line-height: 20vw;
+                    color: #8e8e8e;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .status {
+                position: absolute;
+                top: 10vw;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                background: #fb7299;
+                height: 4vw;
+                font-size: 3vw;
+                line-height: 4vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .level {
+                position: absolute;
+                bottom: 3vw;
+                right: 0;
+                font-size: 2vw;
+                line-height: 3.5vw;
+                height: 3vw;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 8vw;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                padding-right: 0.05rem;
+                text-align: right;
+                border-top-left-radius: 0.2rem;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .star {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                font-size: 0;
+                height: 3vw;
+                white-space: nowrap;
+                overflow: hidden;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                padding-right: 0.05rem;
+                text-align: right;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .star .fa {
+                    font-style: italic;
+                    color: #f9d813;
+                    font-size: 2vw;
+                    line-height: 3vw;
+                    margin-left: 0.02rem;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .feiji {
+                height: 3vw;
+                width: 10.28vw;
+                background-image: url(../../Material/BG.ShipBox.FeiJi.png);
+                background-size: 100% 100%;
+                position: absolute;
+                top: 1.48rem;
+                right: -0.05rem;
+                text-align: right;
+                color: #fbfbfb;
+                font-size: 2vw;
+                line-height: 3vw;
+                padding-right: 0.05rem;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .daodan {
+                height: 3vw;
+                width: 10.28vw;
+                background-image: url(../../Material/BG.ShipBox.DaoDan.png);
+                background-size: 100% 100%;
+                position: absolute;
+                top: 1.48rem;
+                right: -0.05rem;
+                text-align: right;
+                color: #fbfbfb;
+                font-size: 2vw;
+                line-height: 3vw;
+                padding-right: 0.05rem;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .shiptype {
+                position: absolute;
+                top: -0.02rem;
+                right: -0.02rem;
+                width: 5vw;
+                height: 5vw;
+                line-height: 5vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .bd .shiptype img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .name {
+                font-size: 2.5vw;
+                line-height: 4vw;
+                height: 4vw;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                margin-top: 1vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp {
+                color: #fb7299;
+                width: 100%;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp .progress {
+                    width: 100%;
+                    margin: 0;
+                    padding: 1px;
+                    background: rgba(151, 151, 151, 0.25);
+                    border-radius: 0.2rem;
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp .progress .progress-bar {
+                        position: relative;
+                        height: 1vw;
+                        border-radius: 0.2rem;
+                        -webkit-transition: 0.4s linear;
+                        -moz-transition: 0.4s linear;
+                        -o-transition: 0.4s linear;
+                        transition: 0.4s linear;
+                        -webkit-transition-property: width, background-color;
+                        -moz-transition-property: width, background-color;
+                        -o-transition-property: width, background-color;
+                        transition-property: width, background-color;
+                        -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        /*-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);*/
+                        background-color: #f63a0f;
+                        width: 0%;
+                    }
+
+                        #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp .progress .progress-bar:before, .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp .progress .progress-bar:before {
+                            bottom: 0;
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                        #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .hp .progress .progress-bar:after {
+                            z-index: 2;
+                            bottom: 45%;
+                            border-radius: 4px;
+                            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                        }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .resource {
+                margin-top: 1vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .title {
+                font-size: 2vw;
+                height: 2.5vw;
+                line-height: 2.5vw;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .grid {
+                display: flex;
+                justify-content: space-between;
+                border: 0.03rem solid #d4dcd6;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .grid dd {
+                    width: 8%;
+                    height: 0.15rem;
+                    background: #bbbbbb;
+                    -webkit-transition: 0.4s linear;
+                    -moz-transition: 0.4s linear;
+                    -o-transition: 0.4s linear;
+                    transition: 0.4s linear;
+                    -webkit-transition-property: background-color;
+                    -moz-transition-property: background-color;
+                    -o-transition-property: background-color;
+                    transition-property: background-color;
+                }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .grid dd.have {
+                        background: #31c12d;
+                    }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .grid.warning dd.have {
+                    background: #e4a734;
+                }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .grid.danger dd.have {
+                    background: #ea6565;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                height: 14vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments dd {
+                    width: 6vw;
+                    height: 6vw;
+                    margin-top: 1vw;
+                    cursor: pointer;
+                    border-radius: 1vw;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0.05rem 0.05rem #989898;
+                }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments dd img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments dd.null {
+                        line-height: 6vw;
+                        text-align: center;
+                        font-size: 4vw;
+                        color: #545454;
+                        border: 0.05rem solid #9bcaec;
+                    }
+
+                        #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments dd.null i {
+                            margin: 0 auto;
+                        }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments .equipment {
+                    display: -webkit-box;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                    display: -moz-box;
+                    -moz-box-orient: horizontal;
+                    -moz-box-pack: center;
+                    -moz-box-align: center;
+                    display: -o-box;
+                    -o-box-orient: horizontal;
+                    -o-box-pack: center;
+                    -o-box-align: center;
+                    display: -ms-box;
+                    -ms-box-orient: horizontal;
+                    -ms-box-pack: center;
+                    -ms-box-align: center;
+                    width: 100%;
+                    margin: 2.5%;
+                    height: 6vw;
+                    line-height: 4vw;
+                    font-size: 3vw;
+                    overflow: hidden;
+                    background: #efd7e0;
+                    -ms-word-break: break-all;
+                    word-break: break-all;
+                    color: #2d2c2c;
+                }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments .equipment.null {
+                        background: #f3eeef;
+                    }
+
+                    #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .equipments .equipment.have:active {
+                        background: #e2afc2;
+                        color: #fff;
+                    }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .actions {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 2vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .actions a {
+                    display: block;
+                    width: 100%;
+                    font-size: 2.8vw;
+                    height: 5vw;
+                    line-height: 4vw;
+                    color: #fb7299;
+                    border: 0.05rem solid;
+                    text-align: center;
+                }
+
+            #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .picker {
+                text-align: center;
+                color: #737373;
+                padding-top: 2vw;
+                border: 0.05rem solid #e0e0e0;
+                height: 57vw;
+            }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .picker i {
+                    font-size: 8vw;
+                    line-height: 10vw;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                #PartialAreas .context .areaPanel_zhanyi .areaContext .fleetships .shipcell .picker label {
+                    line-height: 7vw;
+                    font-size: 5vw;
+                    margin-top: 1vw;
+                    text-align: center;
+                }
+
+    #PartialAreas .context .areaPanel_zhanyi .areaContext .messageBox {
+        margin: 2vw;
+        height: 50vw;
+        border: 0.1rem solid #e4e4e4;
+        padding: 1vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    /*舰少资料库*/
+    #PartialAreas .context .areaPanel_jianshaoziliao .areaContext iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Wiki百科*/
+    #PartialAreas .context .areaPanel_wikibaike .areaContext iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*演习*/
+    #PartialAreas .context .areaPanel_yanxi .areaContext .headertips {
+        font-size: 5vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 2vw 2vw 0 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .messageBox {
+            width: 70vw;
+            height: 24vw;
+            border: 0.1rem solid #e4e4e4;
+            padding: 1vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            font-size: 4vw;
+            line-height: 5vw;
+        }
+
+        #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .action {
+            width: 30vw;
+        }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .action a {
+                color: #0094ff;
+                width: 20vw;
+                text-align: center;
+                font-size: 4vw;
+                border-radius: 1vw;
+                white-space: nowrap;
+                border: 0.1rem solid #66b0e6;
+                margin-left: 3%;
+                height: 10vw;
+                font-weight: bolder;
+                display: block;
+                line-height: 8vw;
+                float: right;
+                margin-right: 1vw;
+                margin-top: 6vw;
+            }
+
+                #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .action a.cancelfight {
+                    color: #fb7299;
+                    border: 0.1rem solid #fb7299;
+                }
+
+                #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .action a.disabled {
+                    color: #b7dcf7;
+                    border-color: #d1e2ef;
+                }
+
+    #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist {
+        margin: 2vw;
+        border-radius: 6px;
+        padding: 2vw;
+        position: relative;
+        overflow: hidden;
+        border: 0.1rem dashed #0094ff;
+        height: 124vw;
+    }
+
+        #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow {
+            width: 100%;
+            overflow: hidden;
+            background: #e1f0fa;
+            height: 22vw;
+            padding: 1vw 1vw;
+            margin-top: 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow:first-child {
+                margin-top: 0;
+            }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalUser {
+                width: 20vw;
+                float: left;
+                overflow: hidden;
+                height: 20vw;
+            }
+
+                #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalUser .level {
+                    -ms-word-break: break-all;
+                    word-break: break-all;
+                    height: 7vw;
+                    font-size: 4vw;
+                    line-height: 7vw;
+                    color: #50d681;
+                    text-align: center;
+                }
+
+                #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalUser .name {
+                    word-break: break-all;
+                    height: 10vw;
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    color: #6e78f7;
+                    overflow: hidden;
+                    font-weight: bolder;
+                    padding: 0 1vw;
+                }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalShips {
+                width: 54vw;
+                float: left;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                font-size: 3.5vw;
+                text-align: center;
+                height: 20vw;
+                background: #f1f6f9;
+            }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow dd {
+                width: 18vw;
+                white-space: nowrap;
+                overflow: hidden;
+                line-height: 5vw;
+            }
+
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .actions {
+                float: right;
+                width: 13vw;
+                height: 20vw;
+                line-height: 20vw;
+                /*text-align: center;*/
+                text-indent: 2vw;
+            }
+
+                #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .actions .md-checkbox {
+                    width: 10vw;
+                    height: 10vw;
+                    margin-top: 6vw;
+                    margin-left: 2vw;
+                }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow.disable .actions .md-checkbox {
+                display: none;
+            }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .actions .fightResult {
+                display: none;
+                font-size: 7vw;
+                font-weight: bolder;
+                color: #ec488b;
+                text-align: left;
+            }
+
+            #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow.disable .actions .fightResult {
+                display: block;
+            }
+    /*远征*/
+    #PartialAreas .context .areaPanel_yuanzheng .areaContext .headertips {
+        font-size: 5vw;
+        padding-left: 4vw;
+        padding-top: 4vw;
+    }
+
+    #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists {
+        margin: 4vw;
+        border: 0.1rem dotted #0094ff;
+        padding: 2vw;
+        height: 76vw;
+    }
+
+        #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell {
+            background: #e1f0fa;
+            margin-top: 2vw;
+            height: 16vw;
+            position: relative;
+        }
+
+            #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell:first-child {
+                margin-top: 0;
+            }
+
+            #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .goToExplore {
+                position: absolute;
+                left: 5vw;
+                top: 4vw;
+            }
+
+            #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .modifyShips {
+                position: absolute;
+                right: 5vw;
+                top: 4vw;
+                color: #0094ff;
+                border: 0.1rem solid #62b9f8;
+            }
+
+            #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .cancel {
+                position: absolute;
+                top: 2vw;
+                left: 2vw;
+                font-size: 6vw;
+                color: #e85d18;
+            }
+
+            #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail {
+                display: flex;
+                justify-content: center;
+                font-size: 3.5vw;
+                text-align: center;
+                padding: 0.5vw 0;
+                height: 16vw;
+                width: 100%;
+            }
+
+                #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    padding: 0 1vw;
+                }
+
+                    #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd.explore {
+                        width: 60%;
+                    }
+
+                #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail .surplusTime {
+                    width: 40%;
+                    color: #ea4d57;
+                    line-height: 16vw;
+                }
+
+                #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd.explore .exploreName {
+                    font-size: 4vw;
+                    height: 9vw;
+                    line-height: 8vw;
+                    padding-top: 1vw;
+                }
+
+                #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd.explore .resources {
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                }
+
+                    #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd.explore .resources .item {
+                        font-size: 2.4vw;
+                        width: 20%;
+                        line-height: 3.6vw;
+                        color: #7081d8;
+                    }
+    /*每日任务*/
+    #PartialAreas .context .areaPanel_daymission .areaContext .taskvolists {
+        margin: 4vw;
+        padding: 2vw;
+    }
+
+    #PartialAreas .context .areaPanel_daymission .areaContext .taskRow {
+        font-size: 3.6vw;
+        line-height: 5vw;
+        padding: 4vw 3vw;
+        margin-bottom: 2vw;
+        background: #c8e9ea;
+    }
+
+        #PartialAreas .context .areaPanel_daymission .areaContext .taskRow .desc {
+            margin-top: 1vw;
+        }
+
+        #PartialAreas .context .areaPanel_daymission .areaContext .taskRow .condition {
+            margin-top: 1vw;
+        }
+
+            #PartialAreas .context .areaPanel_daymission .areaContext .taskRow .condition h2 {
+                font-size: 3vw;
+            }
+
+            #PartialAreas .context .areaPanel_daymission .areaContext .taskRow .condition p {
+                font-size: 3.5vw;
+            }
+
+            #PartialAreas .context .areaPanel_daymission .areaContext .taskRow .condition .success {
+                color: #4c6eef;
+            }
+    /*战绩榜单*/
+    #PartialAreas .context .areaPanel_zhanji .areaContext .rank {
+        margin: 4vw;
+        position: relative;
+    }
+
+        #PartialAreas .context .areaPanel_zhanji .areaContext .rank .header {
+            font-size: 5vw;
+            height: 7vw;
+            line-height: 7vw;
+            font-weight: bolder;
+        }
+
+        #PartialAreas .context .areaPanel_zhanji .areaContext .rank .my {
+            position: absolute;
+            display: flex;
+            right: 0;
+            top: 0;
+            height: 7vw;
+            line-height: 7vw;
+            font-size: 4vw;
+        }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .my p {
+                padding: 0 2vw;
+            }
+
+        #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists {
+            border: 1vw dotted #fb7299;
+            padding: 1vw 0;
+        }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .rows {
+                height: 30vw;
+                overflow: auto;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row {
+                display: flex;
+                font-size: 3.5vw;
+                height: 6vw;
+                line-height: 6vw;
+                width: 90vw;
+                text-align: center;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd {
+                font-size: 4vw;
+                height: 6vw;
+                line-height: 6vw;
+                border-bottom: 1px dotted #fb7299;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row dd {
+                overflow: hidden;
+                white-space: nowrap;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                padding: 0 1vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd dd {
+                overflow: hidden;
+                -ms-text-overflow: initial;
+                -o-text-overflow: initial;
+                text-overflow: initial;
+                padding: 0;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row .lf {
+                text-align: left;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row .w15 {
+                width: 15vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row .w20 {
+                width: 20vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row .w35 {
+                width: 35vw;
+            }
+
+            #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .row .w30 {
+                width: 30vw;
+            }
+    /*船坞*/
+    #PartialAreas .context .areaPanel_shipdocks .areaContext {
+        display: flex;
+        flex-direction: column;
+    }
+
+        #PartialAreas .context .areaPanel_shipdocks .areaContext .heaerbar {
+            padding: 3vw 4vw;
+        }
+
+        #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar {
+            width: 100%;
+            height: 15vw;
+            line-height: 15vw;
+            padding: 2vw 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: #fff;
+        }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar label {
+                width: 20vw;
+                text-align: center;
+            }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar input {
+                width: 65vw;
+                height: 100%;
+                border-radius: 1vw;
+                border: 2px solid #ccc6c6;
+                background-color: #fff;
+                outline: none;
+                -webkit-appearance: none;
+                font-size: 5vw;
+                text-indent: 2vw;
+                color: #ef7d7d;
+            }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon {
+                width: 15vw;
+                text-align: center;
+                font-size: 9vw;
+                color: #f79494;
+            }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon:active {
+                    color: #e26666;
+                }
+
+        #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar {
+            width: 100%;
+            height: 10vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            border-top: 1px #ddd solid;
+            border-bottom: 1px #eaedeb solid;
+            background-color: #fff;
+            -moz-box-sizing: initial;
+            -webkit-box-sizing: initial;
+            box-sizing: initial;
+            position: relative;
+        }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter {
+                width: 20%;
+                font-size: 3vw;
+                align-items: center;
+                display: flex;
+                color: #898989;
+            }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter label {
+                    width: 70%;
+                    text-align: right;
+                    font-size: 3.3vw;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter.active label {
+                    color: #ef4a4a;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .order {
+                    width: 30%;
+                    text-align: center;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter[data-filter].active .order {
+                    color: #ef4a4a;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .order > i {
+                    display: block;
+                    width: 100%;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter.active.asc .order > i.fa-caret-up {
+                    color: #f62323;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter.active.desc .order > i.fa-caret-down {
+                    color: #f62323;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist {
+                    position: absolute;
+                    top: 10vw;
+                    left: 0;
+                    z-index: 99;
+                    width: 100vw;
+                    border-top: 1px #ddd solid;
+                    background: rgba(158, 158, 158, 0);
+                    display: none;
+                }
+
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl {
+                        height: 60vw;
+                        padding-bottom: 5vw;
+                        overflow: auto;
+                        display: flex;
+                        -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                        background: #fff;
+                        border-bottom: 1px #ddd solid;
+                    }
+
+                        #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl dd {
+                            width: 28%;
+                            margin: 0 2.5%;
+                            height: 10vw;
+                            line-height: 6vw;
+                            padding: 0 1vw;
+                            padding-top: 4vw;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            -ms-text-overflow: ellipsis;
+                            -o-text-overflow: ellipsis;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: flex;
+                            justify-content: space-between;
+                            -moz-box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                        }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl dd.selected {
+                                border-bottom: 1px solid #da4141;
+                            }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl dd .name {
+                            }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl dd .fa {
+                                line-height: 6vw;
+                                color: #da4141;
+                                display: none;
+                            }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist dl dd.selected .fa {
+                                display: block;
+                            }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist .actions {
+                        display: flex;
+                        border-bottom: 1px #ddd solid;
+                    }
+
+                        #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist .actions a {
+                            display: block;
+                            width: 50%;
+                            height: 10vw;
+                            line-height: 10vw;
+                            font-size: 5vw;
+                            text-align: center;
+                        }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist .actions a.submit {
+                                background: #da4141;
+                                color: #fff;
+                            }
+
+                            #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar .filter .enumlist .actions a.reset {
+                                background: #fff;
+                                color: #898989;
+                            }
+
+        #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: 92vw;
+            justify-content: flex-start;
+            margin: 3vw auto;
+            flex-shrink: 4;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell {
+                width: 22vw;
+                text-align: center;
+                padding: 0.5vw;
+                background: #ebf5ee;
+                margin: 0.5vw 0.5vw;
+            }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd {
+                    height: 39vw;
+                    position: relative;
+                    margin-bottom: 2vw;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell.loweffect .bd {
+                    height: 20vw;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .img img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .img .fa {
+                        font-size: 8vw;
+                        line-height: 20vw;
+                        color: #8e8e8e;
+                    }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status {
+                    position: absolute;
+                    bottom: 5vw;
+                    left: 0;
+                    width: 100%;
+                    color: #fff;
+                    background: #fb7299;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid {
+                    position: absolute;
+                    right: 1vw;
+                    top: 0.05rem;
+                    width: 5vw;
+                    height: 5vw;
+                    border-radius: 5vw;
+                    color: #fff;
+                    background: #fb7299;
+                    font-size: 3.5vw;
+                    line-height: 5vw;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .married {
+                    position: absolute;
+                    left: 0.01rem;
+                    top: 0.01rem;
+                    font-size: 3.5vw;
+                    color: #f72929;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .name {
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    height: 5vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .level {
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    height: 5vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    margin-bottom: 1vw;
+                }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist.showequipments .shipcell .equipments {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 1vw;
+            }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist.showequipments .shipcell .equipments dd {
+                    width: 9vw;
+                    height: 9vw;
+                    margin-top: 1vw;
+                    cursor: pointer;
+                }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist.showequipments .shipcell .equipments dd img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist.showequipments .shipcell .equipments dd.null {
+                        line-height: 9.5vw;
+                        text-align: center;
+                        font-size: 7vw;
+                        color: #383737;
+                        border: 1px solid #9bcaec;
+                    }
+
+            #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .equipments {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                display: none;
+            }
+
+                #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .equipments .equipment {
+                    display: -webkit-box;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                    display: -moz-box;
+                    -moz-box-orient: horizontal;
+                    -moz-box-pack: center;
+                    -moz-box-align: center;
+                    display: -o-box;
+                    -o-box-orient: horizontal;
+                    -o-box-pack: center;
+                    -o-box-align: center;
+                    display: -ms-box;
+                    -ms-box-orient: horizontal;
+                    -ms-box-pack: center;
+                    -ms-box-align: center;
+                    width: 100%;
+                    margin: 2.5%;
+                    height: 8vw;
+                    line-height: 4vw;
+                    font-size: 3vw;
+                    overflow: hidden;
+                    background: #efd7e0;
+                    -ms-word-break: break-all;
+                    word-break: break-all;
+                    color: #2d2c2c;
+                }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .equipments .equipment.null {
+                        background: #f3eeef;
+                    }
+
+                    #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .equipments .equipment.have:active {
+                        background: #e2afc2;
+                        color: #fff;
+                    }
+
+.modal_areaPanel_shipdocks .shipdetail {
+}
+
+    .modal_areaPanel_shipdocks .shipdetail .level {
+        font-size: 5vw;
+        height: 6vw;
+        line-height: 6vw;
+        margin-bottom: 2vw;
+    }
+
+        .modal_areaPanel_shipdocks .shipdetail .level span {
+            font-size: 3vw;
+            text-indent: 3vw;
+        }
+
+    .modal_areaPanel_shipdocks .shipdetail .list {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 2vw 0;
+    }
+
+        .modal_areaPanel_shipdocks .shipdetail .list.opts {
+            border-bottom: 0.1rem solid #fb72a0;
+        }
+
+        .modal_areaPanel_shipdocks .shipdetail .list dd {
+            width: 50%;
+            font-size: 5vw;
+            display: flex;
+            height: 6vw;
+            line-height: 6vw;
+        }
+
+            .modal_areaPanel_shipdocks .shipdetail .list dd label {
+                width: 40%;
+                text-align: right;
+            }
+
+            .modal_areaPanel_shipdocks .shipdetail .list dd span {
+                width: 60%;
+                text-indent: 2vw;
+            }
+
+            .modal_areaPanel_shipdocks .shipdetail .list dd.sp1 {
+                width: 100%;
+                margin-bottom: 1vw;
+            }
+
+            .modal_areaPanel_shipdocks .shipdetail .list dd.sp3 {
+                width: 33%;
+            }
+
+                .modal_areaPanel_shipdocks .shipdetail .list dd.sp3 label {
+                    width: 20%;
+                }
+
+                .modal_areaPanel_shipdocks .shipdetail .list dd.sp3 span {
+                    width: 80%;
+                }
+
+
+
+    .modal_areaPanel_shipdocks .shipdetail .equipments {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .modal_areaPanel_shipdocks .shipdetail .equipments dd {
+            width: 9vw;
+            height: 9vw;
+            cursor: pointer;
+            margin: 0 1vw;
+        }
+
+            .modal_areaPanel_shipdocks .shipdetail .equipments dd.null {
+                line-height: 9.5vw;
+                text-align: center;
+                font-size: 7vw;
+                color: #383737;
+                border: 1px solid #9bcaec;
+            }
+
+                .modal_areaPanel_shipdocks .shipdetail .equipments dd.null i {
+                    margin: 0 auto;
+                    line-height: 8.5vw;
+                }
+
+            .modal_areaPanel_shipdocks .shipdetail .equipments dd.equipcell {
+            }
+
+                .modal_areaPanel_shipdocks .shipdetail .equipments dd.equipcell img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+    .modal_areaPanel_shipdocks .shipdetail .tactics {
+        width: 100%;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-top: 2vw;
+        border-top: 0.1rem dotted #fb72a0;
+    }
+
+        .modal_areaPanel_shipdocks .shipdetail .tactics dd {
+            width: 33%;
+            height: 8vw;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .modal_areaPanel_shipdocks .shipdetail .tactics dd.active {
+                color: #ecb229;
+            }
+
+            .modal_areaPanel_shipdocks .shipdetail .tactics dd img {
+                height: 8vw;
+                width: 8vw;
+            }
+
+            .modal_areaPanel_shipdocks .shipdetail .tactics dd .txt {
+                height: 8vw;
+                width: 17vw;
+                padding-left: 1vw;
+            }
+
+                .modal_areaPanel_shipdocks .shipdetail .tactics dd .txt .title {
+                    font-size: 3vw;
+                    line-height: 4vw;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                .modal_areaPanel_shipdocks .shipdetail .tactics dd .txt .lv {
+                    font-size: 2.5vw;
+                    line-height: 4vw;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+/*舰船图鉴*/
+#PartialAreas .context .areaPanel_shiptujian .areaContext .headertips {
+    font-size: 5vw;
+    padding-left: 4vw;
+    padding-top: 4vw;
+}
+
+#PartialAreas .context .areaPanel_shiptujian .areaContext .headerbar {
+    padding-top: 4vw;
+    margin: 0 4vw 0 4vw;
+    border-bottom: 0.1rem solid #bdc1c3;
+    display: flex;
+}
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .headerbar .check-cell {
+        width: 50%;
+    }
+
+#PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 92vw;
+    justify-content: space-between;
+    margin: 3vw auto;
+}
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell {
+        width: 22vw;
+        text-align: center;
+        padding: 0.5vw;
+        background: #ebf5ee;
+        margin: 0.5vw 0;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist.onlyShowOwn .shipcell {
+        display: none;
+    }
+
+        #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist.onlyShowOwn .shipcell.null {
+            display: block;
+        }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist.onlyShowLocked .shipcell {
+        display: none;
+    }
+
+        #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist.onlyShowLocked .shipcell.locked {
+            display: block;
+        }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd {
+        height: 39vw;
+        position: relative;
+        margin-bottom: 1vw;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell.loweffect .bd {
+        height: 20vw;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .no {
+        width: 100%;
+        color: #fff;
+        background: #9fdffd;
+        height: 5vw;
+        line-height: 5vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .img {
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+
+        #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .img .fa {
+            font-size: 8vw;
+            line-height: 20vw;
+            color: #8e8e8e;
+        }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status {
+        position: absolute;
+        bottom: 5vw;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        background: #fb7299;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .forcelock {
+        position: absolute;
+        top: -5vw;
+        right: 0;
+        font-size: 5vw;
+        height: 5vw;
+        line-height: 4vw;
+        width: 8vw;
+        text-align: right;
+        color: #4a4a4a;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell.locked .bd .forcelock {
+        color: #e85554;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .name {
+        font-size: 4vw;
+        line-height: 5vw;
+        height: 5vw;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell.null .no {
+        background: #ef4191;
+    }
+
+    #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell.null .name {
+        color: #fd1f5a;
+    }
+
+.modal_areaPanel_shipdrap .buildlist {
+}
+
+    .modal_areaPanel_shipdrap .buildlist h2 {
+        font-size: 6vw;
+        height: 10vw;
+    }
+
+    .modal_areaPanel_shipdrap .buildlist .info {
+        font-size: 4vw;
+        display: flex;
+        height: 6vw;
+        line-height: 6vw;
+    }
+
+        .modal_areaPanel_shipdrap .buildlist .info .cost {
+            width: 65vw;
+        }
+
+            .modal_areaPanel_shipdrap .buildlist .info .cost span {
+                padding-right: 2vw;
+            }
+
+.modal_areaPanel_shipdrap .draplist {
+    margin-top: 3vw;
+}
+
+    .modal_areaPanel_shipdrap .draplist h2 {
+        font-size: 6vw;
+        height: 10vw;
+    }
+
+    .modal_areaPanel_shipdrap .draplist .drap {
+        font-size: 4vw;
+        display: flex;
+        height: 6vw;
+        line-height: 6vw;
+    }
+
+        .modal_areaPanel_shipdrap .draplist .drap label {
+            overflow: hidden;
+        }
+
+        .modal_areaPanel_shipdrap .draplist .drap .map {
+            width: 35vw;
+        }
+
+        .modal_areaPanel_shipdrap .draplist .drap .node {
+            width: 20vw;
+            display: flex;
+        }
+
+            .modal_areaPanel_shipdrap .draplist .drap .node span {
+                width: 5vw;
+            }
+
+        .modal_areaPanel_shipdrap .draplist .drap .ratio {
+            width: 20vw;
+        }
+
+        .modal_areaPanel_shipdrap .draplist .drap .resulttype {
+            width: 25vw;
+            text-align: center;
+        }
+
+    .modal_areaPanel_shipdrap .draplist .split {
+        height: 0;
+        border-top: 1vw dotted #696e71;
+        width: 100%;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+    }
+/*装备*/
+#PartialAreas .context .areaPanel_equipdocks .areaContext {
+    display: flex;
+    flex-direction: column;
+}
+
+    #PartialAreas .context .areaPanel_equipdocks .areaContext .heaerbar {
+        padding: 3vw 4vw;
+    }
+
+    #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar {
+        width: 100%;
+        height: 15vw;
+        line-height: 15vw;
+        padding: 2vw 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #fff;
+    }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar label {
+            width: 20vw;
+            text-align: center;
+        }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar input {
+            width: 65vw;
+            height: 100%;
+            border-radius: 1vw;
+            border: 2px solid #ccc6c6;
+            background-color: #fff;
+            outline: none;
+            -webkit-appearance: none;
+            font-size: 5vw;
+            text-indent: 2vw;
+            color: #ef7d7d;
+        }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar .icon {
+            width: 15vw;
+            text-align: center;
+            font-size: 9vw;
+            color: #f79494;
+        }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar .icon:active {
+                color: #e26666;
+            }
+
+    #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar {
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        border-top: 1px #ddd solid;
+        border-bottom: 1px #eaedeb solid;
+        background-color: #fff;
+        -moz-box-sizing: initial;
+        -webkit-box-sizing: initial;
+        box-sizing: initial;
+        position: relative;
+    }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter {
+            width: 20%;
+            font-size: 3vw;
+            align-items: center;
+            display: flex;
+            color: #898989;
+        }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter label {
+                width: 70%;
+                text-align: right;
+                font-size: 3.3vw;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter.active label {
+                color: #ef4a4a;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .order {
+                width: 30%;
+                text-align: center;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter[data-filter].active .order {
+                color: #ef4a4a;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .order > i {
+                display: block;
+                width: 100%;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter.active.asc .order > i.fa-caret-up {
+                color: #f62323;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter.active.desc .order > i.fa-caret-down {
+                color: #f62323;
+            }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist {
+                position: absolute;
+                top: 10vw;
+                left: 0;
+                z-index: 99;
+                width: 100vw;
+                border-top: 1px #ddd solid;
+                background: rgba(158, 158, 158, 0);
+                display: none;
+            }
+
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl {
+                    height: 60vw;
+                    padding-bottom: 5vw;
+                    overflow: auto;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    background: #fff;
+                    border-bottom: 1px #ddd solid;
+                }
+
+                    #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl dd {
+                        width: 28%;
+                        margin: 0 2.5%;
+                        height: 10vw;
+                        line-height: 6vw;
+                        padding: 0 1vw;
+                        padding-top: 4vw;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        -ms-text-overflow: ellipsis;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: flex;
+                        justify-content: space-between;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl dd.selected {
+                            border-bottom: 1px solid #da4141;
+                        }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl dd .name {
+                        }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl dd .fa {
+                            line-height: 6vw;
+                            color: #da4141;
+                            display: none;
+                        }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist dl dd.selected .fa {
+                            display: block;
+                        }
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist .actions {
+                    display: flex;
+                    border-bottom: 1px #ddd solid;
+                }
+
+                    #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist .actions a {
+                        display: block;
+                        width: 50%;
+                        height: 10vw;
+                        line-height: 10vw;
+                        font-size: 5vw;
+                        text-align: center;
+                    }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist .actions a.submit {
+                            background: #da4141;
+                            color: #fff;
+                        }
+
+                        #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar .filter .enumlist .actions a.reset {
+                            background: #fff;
+                            color: #898989;
+                        }
+
+    #PartialAreas .context .areaPanel_equipdocks .areaContext .resource {
+        display: flex;
+        padding: 0 5vw;
+        height: 9vw;
+        line-height: 9vw;
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .resource dd {
+            display: flex;
+            margin-right: 5vw;
+        }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .resource label {
+            margin-right: 2vw;
+        }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .resource span {
+        }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+            color: #fb7299;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #fb7299;
+            height: 8vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 6vw;
+            padding: 0 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a.disable {
+                color: #d5d1d2;
+                border-color: #e4dddf;
+            }
+
+    #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 92vw;
+        justify-content: flex-start;
+        margin: 3vw auto;
+        flex-shrink: 4;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 1vw;
+    }
+
+        #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell {
+            width: 22vw;
+            text-align: center;
+            padding: 0.5vw;
+            background: #ebf5ee;
+            margin: 0.5vw 0.5vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd {
+                height: 22vw;
+                position: relative;
+                margin-bottom: 2vw;
+            }
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .img {
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                }
+
+                    #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .img img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+                    position: absolute;
+                    bottom: 0vw;
+                    left: 0;
+                    width: 100%;
+                    color: #fff;
+                    background: #fb7299;
+                    font-size: 4vw;
+                    height: 5vw;
+                    line-height: 5vw;
+                }
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked {
+                    position: absolute;
+                    left: 0;
+                    top: 0.05rem;
+                    width: 5vw;
+                    height: 5vw;
+                    color: #fb7299;
+                    font-size: 3.5vw;
+                    line-height: 5vw;
+                }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions {
+                display: flex;
+                justify-content: space-around;
+            }
+
+                #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a {
+                    display: block;
+                    width: 46%;
+                    font-size: 3.5vw;
+                    height: 5vw;
+                    line-height: 4.5vw;
+                    color: #fb7299;
+                    border: 2px solid;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+
+                    #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a.disable {
+                        color: #d2d2d2 !important;
+                    }
+
+            #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .name {
+                font-size: 3.5vw;
+                line-height: 4vw;
+                height: 10vw;
+                overflow: hidden;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+
+.modal_areaPanel_equipdocks {
+}
+
+    .modal_areaPanel_equipdocks .equipdetail {
+    }
+
+        .modal_areaPanel_equipdocks .equipdetail dl {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 2vw 0;
+        }
+
+
+
+            .modal_areaPanel_equipdocks .equipdetail dl dd {
+                width: 50%;
+                font-size: 5vw;
+                display: flex;
+                height: 6vw;
+                line-height: 6vw;
+            }
+
+                .modal_areaPanel_equipdocks .equipdetail dl dd label {
+                    width: 40%;
+                    text-align: right;
+                }
+
+                .modal_areaPanel_equipdocks .equipdetail dl dd span {
+                    width: 60%;
+                    text-indent: 2vw;
+                }
+
+/*自动强化*/
+#PartialAreas .context .areaPanel_autoqianghua .areaContext .headertips {
+    font-size: 5vw;
+    padding-left: 4vw;
+    padding-top: 4vw;
+}
+
+#PartialAreas .context .areaPanel_autoqianghua .areaContext .headerbar {
+    padding-top: 4vw;
+    margin: 0 4vw 0 4vw;
+    border-bottom: 0.1rem solid #bdc1c3;
+    display: flex;
+}
+
+#PartialAreas .context .areaPanel_autoqianghua .areaContext .searchBar {
+    height: 15vw;
+    line-height: 15vw;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px #eaedeb solid;
+    width: 100vw;
+}
+
+    #PartialAreas .context .areaPanel_autoqianghua .areaContext .searchBar label {
+        width: 20vw;
+        text-align: center;
+    }
+
+    #PartialAreas .context .areaPanel_autoqianghua .areaContext .searchBar input {
+        width: 72vw;
+        height: 100%;
+        border-radius: 1vw;
+        border: 2px solid #ccc6c6;
+        background-color: #fff;
+        outline: none;
+        -webkit-appearance: none;
+        font-size: 5vw;
+        text-indent: 2vw;
+        color: #ef7d7d;
+    }
+
+#PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 92vw;
+    justify-content: space-between;
+    margin: 3vw auto;
+}
+
+    #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow {
+        width: 100%;
+        text-align: center;
+        padding: 0.5vw;
+        background: #ebf5ee;
+        margin: 0.5vw 0;
+        display: flex;
+    }
+
+        #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow .check-cell {
+            width: 11vw;
+            padding: 1vw;
+        }
+
+        #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow .ship {
+            display: flex;
+            justify-content: center;
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 0.5vw 0;
+            width: 80vw;
+            flex-wrap: wrap;
+        }
+
+        #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow:last-child .ship {
+            border-bottom: none;
+        }
+
+        #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow .ship dd {
+            padding: 0 1vw;
+            width: 20vw;
+            line-height: 5vw;
+            height: 11vw;
+            overflow: hidden;
+            font-size: 3.8vw;
+            padding: 0.5vw 0;
+        }
+
+            #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow .ship dd.name {
+                font-weight: bolder;
+            }
+
+
+/*好友演习*/
+#PartialAreas .context .areaPanel_friends .areaContext .headertips {
+    font-size: 5vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw 2vw 0 2vw;
+}
+
+    #PartialAreas .context .areaPanel_friends .areaContext .headertips .messageBox {
+        width: 70vw;
+        height: 24vw;
+        border: 0.1rem solid #e4e4e4;
+        padding: 1vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    #PartialAreas .context .areaPanel_friends .areaContext .headertips .action {
+        width: 30vw;
+    }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .headertips .action a {
+            color: #0094ff;
+            width: 20vw;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #66b0e6;
+            margin-left: 3%;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 8vw;
+            float: right;
+            margin-right: 1vw;
+            margin-top: 6vw;
+        }
+
+            #PartialAreas .context .areaPanel_friends .areaContext .headertips .action a.cancelfight {
+                color: #fb7299;
+                border: 0.1rem solid #fb7299;
+            }
+
+            #PartialAreas .context .areaPanel_friends .areaContext .headertips .action a.disabled {
+                color: #b7dcf7;
+                border-color: #d1e2ef;
+            }
+
+#PartialAreas .context .areaPanel_friends .areaContext .rivallist {
+    margin: 2vw;
+    border-radius: 6px;
+    padding: 2vw;
+    position: relative;
+    overflow: auto;
+    border: 0.1rem dashed #0094ff;
+    height: 124vw;
+}
+
+    #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow {
+        width: 100%;
+        overflow: hidden;
+        background: #e1f0fa;
+        height: 22vw;
+        padding: 1vw 1vw;
+        margin-top: 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow:first-child {
+            margin-top: 0;
+        }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalUser {
+            width: 20vw;
+            float: left;
+            overflow: hidden;
+            height: 20vw;
+        }
+
+            #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalUser .level {
+                -ms-word-break: break-all;
+                word-break: break-all;
+                height: 7vw;
+                font-size: 4vw;
+                line-height: 7vw;
+                color: #50d681;
+                text-align: center;
+            }
+
+            #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalUser .name {
+                word-break: break-all;
+                height: 10vw;
+                font-size: 4vw;
+                line-height: 5vw;
+                color: #6e78f7;
+                overflow: hidden;
+                font-weight: bolder;
+                padding: 0 1vw;
+            }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalShips {
+            width: 54vw;
+            float: left;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            font-size: 3.5vw;
+            text-align: center;
+            height: 20vw;
+            background: #f1f6f9;
+        }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow dd {
+            width: 18vw;
+            white-space: nowrap;
+            overflow: hidden;
+            line-height: 5vw;
+        }
+
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .actions {
+            float: right;
+            width: 13vw;
+            height: 20vw;
+            line-height: 20vw;
+            text-indent: 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .actions .md-checkbox {
+                width: 10vw;
+                height: 10vw;
+                margin-top: 6vw;
+                margin-left: 2vw;
+            }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow.disable .actions .md-checkbox {
+            display: none;
+        }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .actions .fightResult {
+            display: none;
+            font-size: 7vw;
+            font-weight: bolder;
+            color: #ec488b;
+            text-align: left;
+        }
+
+        #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow.disable .actions .fightResult {
+            display: block;
+        }
+
+/*自动换船*/
+#PartialAreas .context .areaPanel_autochangeship .areaContext .headertips {
+    font-size: 5vw;
+    padding-left: 4vw;
+    padding-top: 4vw;
+}
+
+#PartialAreas .context .areaPanel_autochangeship .areaContext .headerbar {
+    padding-top: 4vw;
+    margin: 0 4vw 0 4vw;
+    border-bottom: 0.1rem solid #bdc1c3;
+    display: flex;
+}
+
+
+#PartialAreas .context .areaPanel_autochangeship .areaContext .searchBar {
+    height: 15vw;
+    line-height: 15vw;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px #eaedeb solid;
+    width: 100vw;
+}
+
+    #PartialAreas .context .areaPanel_autochangeship .areaContext .searchBar label {
+        width: 20vw;
+        text-align: center;
+    }
+
+    #PartialAreas .context .areaPanel_autochangeship .areaContext .searchBar input {
+        width: 72vw;
+        height: 100%;
+        border-radius: 1vw;
+        border: 2px solid #ccc6c6;
+        background-color: #fff;
+        outline: none;
+        -webkit-appearance: none;
+        font-size: 5vw;
+        text-indent: 2vw;
+        color: #ef7d7d;
+    }
+
+#PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 92vw;
+    justify-content: space-between;
+    margin: 3vw auto;
+}
+
+    #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow {
+        width: 100%;
+        text-align: center;
+        padding: 0.5vw;
+        background: #ebf5ee;
+        margin: 0.5vw 0;
+        display: flex;
+    }
+
+        #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .check-cell.ckBox_AutoChangeShip {
+            width: 11vw;
+            padding: 1vw;
+            margin-top: 1vw;
+        }
+
+        #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .ship {
+            display: flex;
+            justify-content: center;
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 0.5vw 0;
+            width: 80vw;
+            flex-wrap: wrap;
+        }
+
+        #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow:last-child .ship {
+            border-bottom: none;
+        }
+
+        #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .ship dd {
+            padding: 0 1vw;
+            width: 20vw;
+            line-height: 5vw;
+            height: 11vw;
+            overflow: hidden;
+            font-size: 3.8vw;
+            padding: 0.5vw 0;
+        }
+
+            #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .ship dd.strong {
+                font-weight: bolder;
+            }
+
+            #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .ship dd.center {
+                line-height: 10vw;
+            }
+
+            #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow .ship dd.ck {
+                display: none;
+            }
+
+        #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck {
+            display: block;
+            width: 16.6%;
+            height: 13vw;
+        }
+
+            #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox {
+                margin-left: 3.8vw;
+            }
+
+                #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox label {
+                    padding-left: 9vw;
+                    height: 6.7vw;
+                    line-height: 6vw;
+                }
+
+                    #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox label > span.inc {
+                        left: -6vw;
+                        top: -6vw;
+                        height: 18vw;
+                        width: 18vw;
+                    }
+
+
+
+                    #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox label > .check {
+                        top: -1.5vw;
+                        left: 2.25vw;
+                        width: 3vw;
+                        height: 6vw;
+                        border: 0.07rem solid #36c6d3;
+                        border-top: none;
+                        border-left: none;
+                    }
+
+                    #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox label > .box {
+                        top: 0;
+                        border: 0.07rem solid #666;
+                        height: 6vw;
+                        width: 6vw;
+                    }
+/*建造*/
+#PartialAreas .context .areaPanel_shipBuilder .buildPanel {
+    margin: 4vw;
+}
+
+    #PartialAreas .context .areaPanel_shipBuilder .buildPanel .gongshi {
+        display: flex;
+        height: 10vw;
+        line-height: 10vw;
+        justify-content: flex-end;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .gongshi label {
+            margin-right: 2vw;
+        }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .gongshi select {
+            width: 40vw;
+            height: 8vw;
+            margin-top: 1vw;
+            color: #797575;
+            font-size: 4vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 2px solid #a9a9a9;
+        }
+
+    #PartialAreas .context .areaPanel_shipBuilder .buildPanel .cost {
+        height: 10vw;
+        line-height: 10vw;
+        display: flex;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .cost dd {
+            width: 25%;
+            display: flex;
+            padding-right: 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_shipBuilder .buildPanel .cost dd label {
+                width: 30%;
+            }
+
+            #PartialAreas .context .areaPanel_shipBuilder .buildPanel .cost dd input {
+                width: 70%;
+                border: 2px solid #a9a9a9;
+                height: 7VW;
+                margin-top: 1.5vw;
+                text-align: center;
+                font-size: 4.5vw;
+            }
+
+    #PartialAreas .context .areaPanel_shipBuilder .buildPanel .group {
+        display: flex;
+        height: 11vw;
+        line-height: 11vw;
+        justify-content: flex-start;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .group label {
+            width: 30%;
+        }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .group input {
+            width: 70%;
+            border: 2px solid #a9a9a9;
+            height: 8vw;
+            margin-top: 1.5vw;
+            text-align: center;
+            font-size: 4vw;
+        }
+
+            #PartialAreas .context .areaPanel_shipBuilder .buildPanel .group input[name=TotalNumber] {
+                width: 30%;
+            }
+
+    #PartialAreas .context .areaPanel_shipBuilder .buildPanel .actions {
+        height: 12vw;
+        line-height: 12vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .buildPanel .actions a {
+            color: #fb7299;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #fb7299;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 8vw;
+            padding: 0 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_shipBuilder .buildPanel .actions a.actionBegin {
+                color: #0094ff;
+                border-color: #66b0e6;
+            }
+
+            #PartialAreas .context .areaPanel_shipBuilder .buildPanel .actions a.actionCancel {
+                color: #fb7299;
+                border-color: #fb7299;
+                display: none;
+            }
+
+#PartialAreas .context .areaPanel_shipBuilder .resource {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 68vw;
+    left: 5vw;
+}
+
+    #PartialAreas .context .areaPanel_shipBuilder .resource dd {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .resource dd label {
+            padding-right: 2vw;
+        }
+
+        #PartialAreas .context .areaPanel_shipBuilder .resource dd span {
+        }
+
+#PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists {
+    margin: 4vw;
+    border: 0.1rem dotted #0094ff;
+    padding: 2vw;
+}
+
+    #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell {
+        background: #e1f0fa;
+        margin-top: 2vw;
+        height: 16vw;
+        position: relative;
+    }
+
+        #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell:first-child {
+            margin-top: 0;
+        }
+
+
+        #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .quickBuild {
+            position: absolute;
+            right: 5vw;
+            top: 4vw;
+            color: #0094ff;
+            border: 0.1rem solid #62b9f8;
+        }
+
+        #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .dockDetail {
+            display: flex;
+            justify-content: center;
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 0.5vw 0;
+            height: 16vw;
+            width: 60vw;
+        }
+
+            #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .dockDetail dd {
+                width: 20vw;
+                white-space: nowrap;
+                overflow: hidden;
+                -webkit-box-flex: 1;
+                flex: 1;
+                padding: 0 1vw;
+                line-height: 6vw;
+                padding-top: 2vw;
+            }
+
+            #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .dockDetail .surplusTime {
+                line-height: 12vw;
+                color: #ea4d57;
+                font-size: 5vw;
+            }
+
+#PartialAreas .context .areaPanel_shipBuilder .areaContext .messageBox {
+    margin: 2vw 4vw;
+    height: 30vw;
+    border: 0.1rem solid #e4e4e4;
+    padding: 1vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+    #PartialAreas .context .areaPanel_shipBuilder .areaContext .messageBox p {
+        font-size: 4vw;
+        line-height: 5.5vw;
+    }
+/*开发*/
+#PartialAreas .context .areaPanel_equipBuilder .buildPanel {
+    margin: 4vw;
+}
+
+    #PartialAreas .context .areaPanel_equipBuilder .buildPanel .gongshi {
+        display: flex;
+        height: 10vw;
+        line-height: 10vw;
+        justify-content: flex-end;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .gongshi label {
+            margin-right: 2vw;
+        }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .gongshi select {
+            width: 40vw;
+            height: 8vw;
+            margin-top: 1vw;
+            color: #797575;
+            font-size: 4vw;
+            text-indent: 2vw;
+            border-radius: 1vw;
+            border: 2px solid #a9a9a9;
+        }
+
+    #PartialAreas .context .areaPanel_equipBuilder .buildPanel .cost {
+        height: 10vw;
+        line-height: 10vw;
+        display: flex;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .cost dd {
+            width: 25%;
+            display: flex;
+            padding-right: 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipBuilder .buildPanel .cost dd label {
+                width: 30%;
+            }
+
+            #PartialAreas .context .areaPanel_equipBuilder .buildPanel .cost dd input {
+                width: 70%;
+                border: 2px solid #a9a9a9;
+                height: 7VW;
+                margin-top: 1.5vw;
+                text-align: center;
+                font-size: 4.5vw;
+            }
+
+    #PartialAreas .context .areaPanel_equipBuilder .buildPanel .group {
+        display: flex;
+        height: 11vw;
+        line-height: 11vw;
+        justify-content: flex-start;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .group label {
+            width: 30%;
+        }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .group input {
+            width: 70%;
+            border: 2px solid #a9a9a9;
+            height: 8vw;
+            margin-top: 1.5vw;
+            text-align: center;
+            font-size: 4vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipBuilder .buildPanel .group input[name=TotalNumber] {
+                width: 30%;
+            }
+
+    #PartialAreas .context .areaPanel_equipBuilder .buildPanel .actions {
+        height: 12vw;
+        line-height: 12vw;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2vw;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .buildPanel .actions a {
+            color: #fb7299;
+            text-align: center;
+            font-size: 4vw;
+            border-radius: 1vw;
+            white-space: nowrap;
+            border: 0.1rem solid #fb7299;
+            height: 10vw;
+            font-weight: bolder;
+            display: block;
+            line-height: 8vw;
+            padding: 0 2vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipBuilder .buildPanel .actions a.actionBegin {
+                color: #0094ff;
+                border-color: #66b0e6;
+            }
+
+            #PartialAreas .context .areaPanel_equipBuilder .buildPanel .actions a.actionCancel {
+                color: #fb7299;
+                border-color: #fb7299;
+                display: none;
+            }
+
+#PartialAreas .context .areaPanel_equipBuilder .resource {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 68vw;
+    left: 5vw;
+}
+
+    #PartialAreas .context .areaPanel_equipBuilder .resource dd {
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .resource dd label {
+            padding-right: 2vw;
+        }
+
+        #PartialAreas .context .areaPanel_equipBuilder .resource dd span {
+        }
+
+#PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists {
+    margin: 4vw;
+    border: 0.1rem dotted #0094ff;
+    padding: 2vw;
+}
+
+    #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell {
+        background: #e1f0fa;
+        margin-top: 2vw;
+        height: 16vw;
+        position: relative;
+    }
+
+        #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell:first-child {
+            margin-top: 0;
+        }
+
+
+        #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .quickBuild {
+            position: absolute;
+            right: 5vw;
+            top: 4vw;
+            color: #0094ff;
+            border: 0.1rem solid #62b9f8;
+        }
+
+        #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .dockDetail {
+            display: flex;
+            justify-content: center;
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 0.5vw 0;
+            height: 16vw;
+            width: 60vw;
+        }
+
+            #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .dockDetail dd {
+                width: 20vw;
+                white-space: nowrap;
+                overflow: hidden;
+                -webkit-box-flex: 1;
+                flex: 1;
+                padding: 0 1vw;
+                line-height: 6vw;
+                padding-top: 2vw;
+            }
+
+            #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .dockDetail .surplusTime {
+                line-height: 12vw;
+                color: #ea4d57;
+                font-size: 5vw;
+            }
+
+#PartialAreas .context .areaPanel_equipBuilder .areaContext .messageBox {
+    margin: 2vw 4vw;
+    height: 30vw;
+    border: 0.1rem solid #e4e4e4;
+    padding: 1vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+    #PartialAreas .context .areaPanel_equipBuilder .areaContext .messageBox p {
+        font-size: 4vw;
+        line-height: 5.5vw;
+    }
+/*料理*/
+#PartialAreas .context .areaPanel_liaoli {
+}
+
+    #PartialAreas .context .areaPanel_liaoli .areaContext {
+        padding: 2vw;
+    }
+
+    #PartialAreas .context .areaPanel_liaoli .cookbooks {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+        #PartialAreas .context .areaPanel_liaoli .cookbooks .food {
+            display: flex;
+            width: 45vw;
+            height: 36vw;
+            position: relative;
+        }
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food.locked {
+                opacity: 0.5;
+            }
+
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food .lf {
+                width: 10vw;
+            }
+
+                #PartialAreas .context .areaPanel_liaoli .cookbooks .food .lf .img {
+                    width: 10vw;
+                    height: 10vw;
+                    padding: 1vw;
+                }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .lf .img img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+
+
+                #PartialAreas .context .areaPanel_liaoli .cookbooks .food .lf .cost {
+                    margin-top: 1vw;
+                }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .lf .cost dd {
+                        width: 100%;
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        height: 4vw;
+                        text-align: center;
+                    }
+
+
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf {
+                width: 35vw;
+                padding: 1vw;
+            }
+
+                #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title {
+                    height: 6vw;
+                    line-height: 6vw;
+                    font-size: 4vw;
+                    font-weight: bolder;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        font-size: 3.5vw;
+                        height: 6vw;
+                        line-height: 6vw;
+                        font-weight: 400;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        background-image: none;
+                        border-radius: 0.1rem;
+                        color: #fb7299;
+                    }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .lock {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        font-size: 3.5vw;
+                        height: 6vw;
+                        line-height: 6vw;
+                        font-weight: 400;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        background-image: none;
+                        border-radius: 0.1rem;
+                        color: #b8b8b8;
+                        background: #fff;
+                        display: none;
+                    }
+
+                #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress {
+                    width: 100%;
+                    margin: 0;
+                    padding: 1px;
+                    background: rgba(151, 151, 151, 0.25);
+                    border-radius: 6px;
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress .progress-bar {
+                        position: relative;
+                        height: 1vw;
+                        border-radius: 2px;
+                        -webkit-transition: 0.4s linear;
+                        -moz-transition: 0.4s linear;
+                        -o-transition: 0.4s linear;
+                        transition: 0.4s linear;
+                        -webkit-transition-property: width, background-color;
+                        -moz-transition-property: width, background-color;
+                        -o-transition-property: width, background-color;
+                        transition-property: width, background-color;
+                        -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        background-color: #f63a0f;
+                        width: 0%;
+                    }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress .progress-bar:before, #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress .progress-bar:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress .progress-bar:before {
+                            bottom: 0;
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress .progress-bar:after {
+                            z-index: 2;
+                            bottom: 45%;
+                            border-radius: 4px;
+                            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                        }
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food.locked .rf > .title .doliaoli {
+                display: none;
+            }
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food.locked .rf > .title .lock {
+                display: block;
+            }
+
+            #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd {
+            }
+
+
+
+                #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe {
+                    width: 100%;
+                }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .buff {
+                    }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .buff h2 {
+                            font-size: 3vw;
+                            line-height: 4vw;
+                            height: 4vw;
+                        }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .buff .txt {
+                            font-size: 2.5vw;
+                            line-height: 3vw;
+                            max-height: 12vw;
+                            overflow: hidden;
+                        }
+
+                    #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .subject {
+                    }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .subject h2 {
+                            font-size: 3vw;
+                            line-height: 4vw;
+                            height: 4vw;
+                        }
+
+                        #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf .bd .describe .subject .txt {
+                            font-size: 2.5vw;
+                            line-height: 3vw;
+                            max-height: 8vw;
+                            overflow: hidden;
+                        }
+/*学院技能*/
+#PartialAreas .context .areaPanel_xueyuan {
+}
+
+    #PartialAreas .context .areaPanel_xueyuan .areaContext {
+        padding: 2vw;
+    }
+
+    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists {
+    }
+
+        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom {
+            border: 0.05rem solid #bdbbbb;
+            border-radius: 0.1rem;
+            padding: 0rem 0.15rem;
+            margin-bottom: 2vw;
+            padding-bottom: 1vw;
+        }
+
+            #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header {
+                display: flex;
+                justify-content: space-between;
+                color: #565656;
+            }
+
+                #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header .roomname {
+                    font-size: 6vw;
+                    height: 10vw;
+                    line-height: 10vw;
+                    font-weight: bolder;
+                    width: 30vw;
+                }
+
+                #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header .teacher {
+                    font-size: 5vw;
+                    height: 10vw;
+                    line-height: 10vw;
+                    width: 50vw;
+                    text-align: right;
+                }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header .teacher .name {
+                    }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header .teacher .name i {
+                            padding: 0 1vw;
+                        }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .header .teacher .changeTeacher {
+                        padding: 0 2vw;
+                    }
+
+            #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+                #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .seat {
+                    width: 22vw;
+                    height: 62vw;
+                    margin: 0.05rem 0.05rem;
+                    background: #ebf5ee;
+                }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .seat .picker {
+                        text-align: center;
+                        color: #737373;
+                        padding-top: 10vw;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .seat .picker i {
+                            font-size: 10vw;
+                            line-height: 12vw;
+                            display: block;
+                            margin: 0 auto;
+                        }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .seat .picker label {
+                            line-height: 10vw;
+                            font-size: 8vw;
+                            margin-top: 1vw;
+                            text-align: center;
+                        }
+
+                #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    padding: 0.05rem;
+                    background: #ebf5ee;
+                }
+
+
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .bd {
+                        height: 39vw;
+                        position: relative;
+                        margin-bottom: 1vw;
+                    }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .tactic {
+                        width: 100%;
+                        height: 10vw;
+                    }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .tactic .title {
+                            font-size: 4vw;
+                            line-height: 5vw;
+                            display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            font-weight: bolder;
+                        }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .tactic .lv {
+                            font-size: 3vw;
+                            line-height: 5vw;
+                            display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-align: right;
+                        }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .bd .cancel {
+                        position: absolute;
+                        top: 1vw;
+                        left: 1vw;
+                        font-size: 6vw;
+                        color: #e85d18;
+                    }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .bd .img {
+                        width: 100%;
+                        height: 100%;
+                        background-size: 100% 100%;
+                    }
+
+                        #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .bd .img img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .bd .fleetid {
+                        position: absolute;
+                        right: 2px;
+                        top: 2px;
+                        width: 4vw;
+                        height: 4vw;
+                        line-height: 4vw;
+                        color: #fff;
+                        background: #fb7299;
+                        font-size: 3vw;
+                    }
+
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .name {
+                        font-size: 4vw;
+                        line-height: 5vw;
+                        height: 5vw;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+
+                    #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist .shipcell .level {
+                        font-size: 3vw;
+                        line-height: 5vw;
+                        height: 5vw;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+/*internet*/
+#PartialAreas .context .areaPanel_internet .areaheader.show a.fa-angle-left {
+    display: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader a.toggleUrlBar {
+    right: 0;
+    left: auto;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader.show a.toggleUrlBar {
+    display: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader a.redirect {
+    right: 0;
+    left: auto;
+    display: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader.show a.redirect {
+    display: block;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader a.close {
+    left: 0;
+    display: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader.show a.close {
+    display: block;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader input {
+    width: 52vw;
+    border-radius: 1vw;
+    background-color: #fff;
+    outline: none;
+    -webkit-appearance: none;
+    font-size: 4vw;
+    text-indent: 2vw;
+    color: #636363;
+    position: absolute;
+    left: 31vw;
+    height: 8vw;
+    bottom: 1vw;
+    border: none;
+    display: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader .http {
+    width: 15vw;
+    border-radius: 1vw;
+    background-color: #fff;
+    outline: none;
+    -webkit-appearance: none;
+    font-size: 4vw;
+    text-indent: 1vw;
+    color: #636363;
+    position: absolute;
+    left: 15vw;
+    height: 8vw;
+    bottom: 1vw;
+    display: none;
+    border: none;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader.show .http {
+    display: block;
+}
+
+#PartialAreas .context .areaPanel_internet .areaheader.show input {
+    display: block;
+}
+/*计划任务*/
+#PartialAreas .context .areaPanel_jihuarenwu .areaContext .headertips {
+    font-size: 5vw;
+    padding-left: 4vw;
+    padding-top: 4vw;
+}
+
+    #PartialAreas .context .areaPanel_jihuarenwu .areaContext .headertips p {
+        font-size: 4vw;
+        line-height: 5vw;
+        text-indent: 2vw;
+    }
+
+#PartialAreas .context .areaPanel_jihuarenwu .areaContext > .actions {
+    font-size: 6vw;
+    line-height: 12vw;
+    height: 12vw;
+    text-align: center;
+    margin: 0 5vw;
+    border-top: 0.05rem solid;
+    margin-top: 2vw;
+}
+
+    #PartialAreas .context .areaPanel_jihuarenwu .areaContext > .actions a {
+        padding: 0 4vw;
+    }
+
+#PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists {
+    margin: 0 auto;
+    width: 92vw;
+}
+
+    #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task {
+        border: 0.05rem dotted #929596;
+        width: 92vw;
+        padding: 1vw;
+        opacity: 0.5;
+        margin-bottom: 1vw;
+    }
+
+        #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task.isactive {
+            opacity: 1;
+        }
+
+        #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head {
+            display: flex;
+            display: flex;
+            height: 8vw;
+            line-height: 8vw;
+        }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head .tasktype {
+                width: 25vw;
+                font-size: 5vw;
+                text-indent: 1vw;
+            }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head .tntervaltype {
+                width: 16vw;
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head .tntervalday {
+                width: 13vw;
+                font-size: 4vw;
+            }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head .actions {
+                width: 35vw;
+                display: flex;
+                justify-content: space-around;
+            }
+
+                #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .head .actions a {
+                    border: none;
+                    line-height: 8vw;
+                    padding: 0 1vw;
+                }
+
+        #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal {
+        }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal dl {
+                display: flex;
+                font-size: 4vw;
+                height: 6vw;
+                line-height: 6vw;
+            }
+
+
+
+                #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal dl dd {
+                    overflow: hidden;
+                    margin: 0 1vw;
+                }
+
+            #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal .mission {
+            }
+
+                #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal .mission .hd {
+                }
+
+                #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .detal .mission .lb {
+                    font-size: 3.6vw;
+                }
+
+        #PartialAreas .context .areaPanel_jihuarenwu .areaContext .tasklists .task .lastruntime {
+            margin-left: 1vw;
+            font-size: 3vw;
+            color: #d75252;
+            line-height: 4vw;
+            height: 4vw;
+        }
+
+/*site IOS*/
+#PartialAreas .context .areaPanel {
+    position: absolute;
+    top: -15vw;
+    bottom: -20vw;
+    left: 0;
+    right: 0;
+    display: none;
+    /*width: 100vw;*/
+    overflow: hidden;
+}
+
+    #PartialAreas .context .areaPanel.active {
+        display: block;
+    }
+
+#PartialAreas .context {
+    overflow: initial;
+}
+
+#PartialViewPanel {
+    overflow: initial;
+    width: 100vw;
+}
+
+#PartialAreas .context .areaPanelFaces {
+    height: 100%;
+}
+
+#PartialViewPanel > .partialContext {
+    width: 100%;
+    overflow: hidden;
+}
+
+    #PartialViewPanel > .partialContext#PartialAreas {
+        overflow: initial;
+    }
+
+#PartialAreas .context .areaPanelLists {
+}
+
+
+
+/*主题*/
+body.miku #PartialAreas > .header,
+body.miku #PartialAreas .context .areaPanel .areaheader,
+body.miku #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status,
+body.miku #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid,
+body.miku #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status,
+body.miku #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+    background: #39C5BB;
+}
+
+body.miku #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font,
+body.miku #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon,
+body.miku #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime,
+body.miku #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a,
+body.miku #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked,
+body.miku #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a,
+body.miku #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+    color: #39C5BB;
+}
+
+body.miku #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.miku #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd,
+body.miku #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #39C5BB;
+}
+/**/
+body.tianyi #PartialAreas > .header,
+body.tianyi #PartialAreas .context .areaPanel .areaheader,
+body.tianyi #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status,
+body.tianyi #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid,
+body.tianyi #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status,
+body.tianyi #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+    background: #4bafe2;
+}
+
+body.tianyi #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font,
+body.tianyi #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon,
+body.tianyi #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime,
+body.tianyi #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a,
+body.tianyi #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked,
+body.tianyi #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a,
+body.tianyi #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+    color: #4bafe2;
+}
+
+body.tianyi #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.tianyi #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd,
+body.tianyi #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #4bafe2;
+}
+/**/
+body.hong #PartialAreas > .header,
+body.hong #PartialAreas .context .areaPanel .areaheader,
+body.hong #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status,
+body.hong #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid,
+body.hong #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status,
+body.hong #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+    background: #dd665b;
+}
+
+body.hong #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font,
+body.hong #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon,
+body.hong #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime,
+body.hong #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a,
+body.hong #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked,
+body.hong #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a,
+body.hong #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+    color: #dd665b;
+}
+
+body.hong #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.hong #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd,
+body.hong #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #dd665b;
+}
+/**/
+body.green #PartialAreas > .header,
+body.green #PartialAreas .context .areaPanel .areaheader,
+body.green #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status,
+body.green #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid,
+body.green #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status,
+body.green #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+    background: #33a133;
+}
+
+body.green #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font,
+body.green #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon,
+body.green #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime,
+body.green #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a,
+body.green #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked,
+body.green #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a,
+body.green #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+    color: #33a133;
+}
+
+body.green #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.green #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd,
+body.green #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #33a133;
+}
+/**/
+body.cheng #PartialAreas > .header,
+body.cheng #PartialAreas .context .areaPanel .areaheader,
+body.cheng #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist .shipcell .bd .status,
+body.cheng #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .fleetid,
+body.cheng #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist .shipcell .bd .status,
+body.cheng #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .number {
+    background: #fb8633;
+}
+
+body.cheng #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font,
+body.cheng #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon,
+body.cheng #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime,
+body.cheng #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .actions a,
+body.cheng #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist .equipcell .bd .locked,
+body.cheng #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a,
+body.cheng #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli {
+    color: #fb8633;
+}
+
+body.cheng #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.cheng #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd,
+body.cheng #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #fb8633;
+}
+/*夜间模式*/
+
+body.night #PartialAreas > .header {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night #PartialAreas .context .areaPanelFaces .faces-list .faces-cell .faceIcon.font {
+    color: #777777;
+}
+
+body.night #PartialAreas .context .areaPanel .areaheader {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night #PartialAreas .context .areaPanel {
+    background: #282828;
+}
+
+body.night #PartialAreas .context .areaPanel_bath .areaContext .docklists {
+    border-color: #7b7b7b;
+}
+
+    body.night #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell {
+        background: #979797;
+    }
+
+        body.night #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .quickRepair {
+            border-color: #6c6c6c;
+            color: #6c6c6c;
+        }
+
+        body.night #PartialAreas .context .areaPanel_bath .areaContext .docklists .dockCell .shopDetail .surplusTime {
+            color: #6c6c6c;
+        }
+
+body.night #PartialAreas .context .areaPanel_bath .areaContext .shiplist .shiprow {
+    background: #979797;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead #ZhanYiSelecter {
+    background: #9d9d9d;
+    border-color: #79797b;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead > a {
+    color: #6c6c6c;
+    border-color: #6c6c6c;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .zhanyihead {
+    border-color: #6c6c6c;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist {
+    border-color: #6c6c6c;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .messageBox,
+body.night #PartialAreas .context .areaPanel_shipBuilder .areaContext .messageBox,
+body.night #PartialAreas .context .areaPanel_equipBuilder .areaContext .messageBox {
+    border-color: #6c6c6c;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .shipstatus {
+    background: #5b5b5b;
+    color: #9a9898;
+}
+
+body.night #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .messageBox, body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist {
+    border-color: #6c6c6c;
+}
+
+
+body.night #PartialAreas .context .areaPanel_yanxi .areaContext .headertips .action a {
+    color: #838688;
+    border-color: #505354;
+}
+
+body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow {
+    background: #1b1b1b;
+}
+
+    body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalUser .level, body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalUser .name, body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .actions .fightResult {
+        color: #6c6c6c;
+    }
+
+
+    body.night #PartialAreas .context .areaPanel_yanxi .areaContext .rivallist .rivalRow .rivalShips {
+        background: #2b2b2b;
+    }
+
+
+body.night #PartialAreas .context .areaPanel_friends .areaContext .headertips .messageBox, body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist {
+    border-color: #6c6c6c;
+}
+
+
+body.night #PartialAreas .context .areaPanel_friends .areaContext .headertips .action a {
+    color: #838688;
+    border-color: #505354;
+}
+
+body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow {
+    background: #1b1b1b;
+}
+
+    body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalUser .level, body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalUser .name, body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .actions .fightResult {
+        color: #6c6c6c;
+    }
+
+
+    body.night #PartialAreas .context .areaPanel_friends .areaContext .rivallist .rivalRow .rivalShips {
+        background: #2b2b2b;
+    }
+
+body.night #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists {
+    border-color: #6c6c6c;
+}
+
+    body.night #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell {
+        background: #1b1b1b;
+    }
+
+        body.night #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail dd.explore .resources .item {
+            color: #898b91;
+        }
+
+        body.night #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .shopDetail .surplusTime {
+            color: #a69b9c;
+        }
+
+
+        body.night #PartialAreas .context .areaPanel_yuanzheng .areaContext .docklists .dockCell .modifyShips {
+            color: #494c4d;
+            border-color: #505354;
+        }
+
+body.night #PartialAreas .context .areaPanel_daymission .areaContext .taskRow {
+    background: #b8b8b8;
+}
+
+body.night #PartialAreas .context .areaPanel_autoqianghua .areaContext .shiplist .shiprow {
+    background: #b8b8b8;
+}
+
+body.night #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow {
+    background: #b8b8b8;
+}
+
+    body.night #PartialAreas .context .areaPanel_autochangeship .areaContext .shiplist .shiprow.selected .ship dd.ck .md-checkbox label > .check {
+        border-color: #6c6c6c;
+    }
+
+body.night #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar {
+    background-color: #424242;
+}
+
+body.night #PartialAreas .context .areaPanel_shipdocks .areaContext .filterBar {
+    background-color: #424242;
+    border-color: #625f5f;
+}
+
+body.night #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar input {
+    background-color: #bebdbd;
+}
+
+body.night #PartialAreas .context .areaPanel_shipdocks .areaContext .searchBar .icon {
+    color: #9c8f8f;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar {
+    background-color: #424242;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .filterBar {
+    background-color: #424242;
+    border-color: #625f5f;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar input {
+    background-color: #bebdbd;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .searchBar .icon {
+    color: #9c8f8f;
+}
+
+body.night #PartialAreas .context .areaPanel_shipdocks .areaContext .shiplist {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_shiptujian .areaContext .headerbar {
+    border-color: #616060;
+}
+
+body.night #PartialAreas .context .areaPanel_shiptujian .areaContext .shiplist {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists,
+body.night #PartialAreas .context .areaPanel_zhanji .areaContext .rank .lists .hd {
+    border-color: #9a9697;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .resource a {
+    border-color: #9a9697;
+    color: #9c8f8f;
+}
+
+body.night #PartialAreas .context .areaPanel_equipdocks .areaContext .equiplist {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists {
+    border-color: #616060;
+}
+
+    body.night #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell {
+        background: #979797;
+    }
+
+        body.night #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .quickBuild {
+            background: #9b9b9b;
+            color: #494c4d;
+            border-color: #6c6c6c;
+        }
+
+        body.night #PartialAreas .context .areaPanel_shipBuilder .areaContext .docklists .dockCell .dockDetail .surplusTime {
+            color: #3e3e3e;
+        }
+
+body.night #PartialAreas .context .areaPanel_shipBuilder .buildPanel .cost dd input,
+body.night #PartialAreas .context .areaPanel_shipBuilder .buildPanel .group input {
+    color: #949494;
+}
+
+body.night #PartialAreas .context .areaPanel_shipBuilder .buildPanel .actions a {
+    opacity: 0.5;
+}
+
+
+body.night #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists {
+    border-color: #616060;
+}
+
+    body.night #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell {
+        background: #979797;
+    }
+
+        body.night #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .quickBuild {
+            background: #9b9b9b;
+            color: #494c4d;
+            border-color: #6c6c6c;
+        }
+
+        body.night #PartialAreas .context .areaPanel_equipBuilder .areaContext .docklists .dockCell .dockDetail .surplusTime {
+            color: #3e3e3e;
+        }
+
+body.night #PartialAreas .context .areaPanel_equipBuilder .buildPanel .cost dd input,
+body.night #PartialAreas .context .areaPanel_equipBuilder .buildPanel .group input {
+    color: #949494;
+}
+
+body.night #PartialAreas .context .areaPanel_equipBuilder .buildPanel .actions a {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_zhanyi .areaContext .shiplist .shipRow .actions {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .title .doliaoli,
+body.night #PartialAreas .context .areaPanel_liaoli .cookbooks .food .rf > .progress,
+body.night #PartialAreas .context .areaPanel_xueyuan .xueyuandocklists .classroom .seatlist {
+    opacity: 0.5;
+}
+
+body.night #PartialAreas .context .areaPanel_autoqianghua .areaContext .searchBar {
+    background-color: #282828;
+    border-color: #494949;
+}
+
+    body.night #PartialAreas .context .areaPanel_autoqianghua .areaContext .searchBar input {
+        background-color: #bebdbd;
+    }
+
+body.night #PartialAreas .context .areaPanel_autochangeship .areaContext .searchBar {
+    background-color: #282828;
+    border-color: #494949;
+}
+
+    body.night #PartialAreas .context .areaPanel_autochangeship .areaContext .searchBar input {
+        background-color: #bebdbd;
+    }
+
+
+/*iosX*/
+body.iosx #PartialAreas > .header {
+    height: 20vw;
+    line-height: 28vw;
+}
+
+body.iosx #PartialAreas .context {
+    top: 20vw;
+}
+
+    body.iosx #PartialAreas .context .areaPanel {
+        top: -20vw;
+    }
+
+        body.iosx #PartialAreas .context .areaPanel .areaheader {
+            height: 20vw;
+            line-height: 28vw;
+        }
+
+            body.iosx #PartialAreas .context .areaPanel .areaheader a {
+                height: 20vw;
+                line-height: 28vw;
+            }
+
+        body.iosx #PartialAreas .context .areaPanel .areaContext {
+            top: 20vw;
+        }

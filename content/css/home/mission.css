@@ -1,0 +1,2266 @@
+
+
+#PartialMission > .header {
+    height: 15vw;
+    line-height: 20vw;
+    font-size: 6vw;
+    text-align: center;
+    background: #fb7299;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#PartialMission .context {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 15vw;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+/*正文*/
+#PartialMission .context {
+    padding: 3vw;
+}
+/*任务选择*/
+#PartialMission .missionSelecter {
+    overflow: hidden;
+    height: 10vw;
+    line-height: 10vw;
+    position: relative;
+}
+
+    #PartialMission .missionSelecter .btnQuickModifyPVE {
+        position: absolute;
+        left: 61vw;
+        top: 1vw;
+        display: block;
+        font-size: 6vw;
+        width: 8vw;
+        height: 8vw;
+        z-index: 2;
+        line-height: 8vw;
+        text-align: center;
+        color: #757575;
+        background: #fff;
+    }
+
+        #PartialMission .missionSelecter .btnQuickModifyPVE.bgNo {
+            background: none;
+        }
+
+    #PartialMission .missionSelecter .btnworkqueue {
+        height: 7vw;
+        width: 25%;
+        float: left;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+
+        #PartialMission .missionSelecter .btnworkqueue .fa {
+            font-size: 5vw;
+            width: 24vw;
+            text-align: center;
+            height: 7vw;
+            display: block;
+            padding: 1vw;
+            color: #fff;
+            background: #fb7299;
+            font-size: 4vw;
+            border: 0.02rem dotted #ffffff;
+            line-height: 5vw;
+        }
+
+    #PartialMission .missionSelecter label {
+        width: 25%;
+        float: left;
+        text-align: center;
+        font-size: 4.5vw;
+    }
+
+    #PartialMission .missionSelecter select {
+        color: #797575;
+        width: 50%;
+        float: left;
+        height: 10vw;
+        font-size: 5vw;
+        text-indent: 2vw;
+        border-radius: 1vw;
+        border: 2px solid #a9a9a9;
+        -moz-transition: height 1s;
+        -o-transition: height 1s;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+    }
+
+#PartialMission .missionProgress {
+    position: absolute;
+    right: 28vw;
+    top: 6vw;
+    font-size: 3vw;
+    z-index: 99;
+    width: 40vw;
+    text-align: right;
+    height: 5vw;
+    line-height: 5vw;
+    display: none;
+    color: #896aff;
+    z-index: 8;
+}
+
+#PartialMission .missionSelecter a {
+    color: #0094ff;
+    width: 22%;
+    display: block;
+    text-align: center;
+    float: left;
+    font-size: 4vw;
+    border-radius: 1vw;
+    white-space: nowrap;
+    border: 0.05rem solid #62b9f8;
+    margin-left: 3%;
+    height: 10vw;
+    line-height: 9vw;
+    font-weight: bolder;
+}
+
+    #PartialMission .missionSelecter a.btnStartMission {
+        display: block;
+    }
+
+    #PartialMission .missionSelecter a.btnStopMission {
+        display: none;
+    }
+
+
+
+#PartialMission .missionSelecter.working a.btnStartMission {
+    display: none;
+}
+
+#PartialMission .missionSelecter.working a.btnStopMission {
+    display: block;
+}
+
+#PartialMission .missionSelecter.stoping a.btnStartMission {
+    display: none;
+}
+
+#PartialMission .missionSelecter.stoping a.btnStopMission {
+    display: block;
+    background: #e9e9e9;
+    color: #adadad;
+    border: 2px solid #a9a9a9;
+}
+
+#PartialMission .missionSelecter.working select {
+    background: #e9e9e9;
+    color: #adadad;
+    border: 2px solid #a9a9a9;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    height: 6vw;
+}
+
+/*资源显示*/
+#PartialMission .Package {
+    margin-top: 3vw;
+}
+
+    #PartialMission .Package dl.resource {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+        #PartialMission .Package dl.resource dd {
+            /*width: 23vw;
+            height: 6.73vw;
+            line-height: 0.5rem;
+            background-image: url(../../Material/BG.Resource.png);
+            background-size: 100% 100%;
+            font-size: 3vw;
+            text-align: right;
+            padding-right: 0.15rem;
+            color: #fff;
+            position: relative;
+            margin-bottom: 1vw;*/
+            width: 21vw;
+            height: 8vw;
+            line-height: 0.5rem;
+            font-size: 3vw;
+            text-align: right;
+            padding-right: 0.05rem;
+            color: #7b7b7b;
+            position: relative;
+            margin-bottom: 1vw;
+            border-bottom: 0.05rem solid #909090;
+            margin-left: 0.2rem;
+            line-height: 9vw;
+        }
+
+            #PartialMission .Package dl.resource dd:before {
+                /*content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 6.7vw;
+                height: 6.7vw;*/
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0.05rem;
+                left: 0;
+                width: 7vw;
+                height: 7vw;
+            }
+
+            #PartialMission .Package dl.resource dd.oil:before {
+                background: url('../../Material/Icon.Oil.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #PartialMission .Package dl.resource dd.ammo:before {
+                background: url('../../Material/Icon.Ammo.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #PartialMission .Package dl.resource dd.steel:before {
+                background: url('../../Material/Icon.Steel.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #PartialMission .Package dl.resource dd.aluminium:before {
+                background: url('../../Material/Icon.Aluminum.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #PartialMission .Package dl.resource dd.repair:before {
+                background: url('../../Material/Icon.QuickRepair.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            #PartialMission .Package dl.resource dd.ship:before {
+                background: url('../../Material/Icon.Ship.png') no-repeat;
+                background-size: 100% 100%;
+                left: -0.07rem;
+            }
+
+/*船只列表*/
+#PartialMission .currentFleet {
+    padding: 1vw;
+    -moz-border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    border-radius: 2vw;
+    margin-top: 1vw;
+    border: 1vw solid #bbd4ef;
+}
+
+    #PartialMission .currentFleet .topBar {
+        display: flex;
+        width: 90vw;
+        padding-top: 1vw;
+    }
+
+        #PartialMission .currentFleet .topBar .fleetName {
+            width: 40vw;
+            height: 7vw;
+            line-height: 7vw;
+            font-size: 4.5vw;
+            font-weight: bolder;
+            padding-left: 1vw;
+        }
+
+        #PartialMission .currentFleet .topBar .fleetNos {
+            display: flex;
+            width: 50vw;
+            justify-content: flex-end;
+            padding-right: 2vw;
+        }
+
+            #PartialMission .currentFleet .topBar .fleetNos dd {
+                width: 7vw;
+                height: 7vw;
+                line-height: 7vw;
+                text-align: center;
+                font-size: 4.5vw;
+                margin-left: 2vw;
+                color: #fff;
+                background: #fb7299;
+                opacity: 0.3;
+            }
+
+                #PartialMission .currentFleet .topBar .fleetNos dd.active {
+                    opacity: 1;
+                }
+
+    #PartialMission .currentFleet .fleetships {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5vw;
+    }
+
+        #PartialMission .currentFleet .fleetships .shipcell {
+            width: 15vw;
+            text-align: center;
+            padding: 0.5vw;
+            background: #ebf5ee;
+            height: 66vw;
+        }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd {
+                width: 100%;
+                border: 0.05rem solid #c3c3c3;
+                position: relative;
+                height: 25vw;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell.remould .bd {
+                border-color: #d09e14;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell.married .bd {
+                border-color: #adc0f9;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .img {
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .bd .img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                #PartialMission .currentFleet .fleetships .shipcell .bd .img .fa {
+                    font-size: 8vw;
+                    line-height: 20vw;
+                    color: #8e8e8e;
+                }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+                position: absolute;
+                top: 10vw;
+                left: 0;
+                width: 100%;
+                color: #fff;
+                background: #fb7299;
+                height: 4vw;
+                font-size: 3vw;
+                line-height: 4vw;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .level {
+                position: absolute;
+                bottom: 3vw;
+                right: 0;
+                font-size: 2vw;
+                line-height: 3.5vw;
+                height: 3vw;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 8vw;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                padding-right: 0.05rem;
+                text-align: right;
+                border-top-left-radius: 0.2rem;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .star {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                font-size: 0;
+                height: 3vw;
+                white-space: nowrap;
+                overflow: hidden;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                padding-right: 0.05rem;
+                text-align: right;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .bd .star .fa {
+                    font-style: italic;
+                    color: #f9d813;
+                    font-size: 2vw;
+                    line-height: 3vw;
+                    margin-left: 0.02rem;
+                }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .feiji {
+                height: 3vw;
+                width: 10.28vw;
+                background-image: url(../../Material/BG.ShipBox.FeiJi.png);
+                background-size: 100% 100%;
+                position: absolute;
+                top: 1.48rem;
+                right: -0.05rem;
+                text-align: right;
+                color: #fbfbfb;
+                font-size: 2vw;
+                line-height: 3vw;
+                padding-right: 0.05rem;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .daodan {
+                height: 3vw;
+                width: 10.28vw;
+                background-image: url(../../Material/BG.ShipBox.DaoDan.png);
+                background-size: 100% 100%;
+                position: absolute;
+                top: 1.48rem;
+                right: -0.05rem;
+                text-align: right;
+                color: #fbfbfb;
+                font-size: 2vw;
+                line-height: 3vw;
+                padding-right: 0.05rem;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .bd .shiptype {
+                position: absolute;
+                top: -0.02rem;
+                right: -0.02rem;
+                width: 5vw;
+                height: 5vw;
+                line-height: 5vw;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .bd .shiptype img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            #PartialMission .currentFleet .fleetships .shipcell .name {
+                font-size: 2.5vw;
+                line-height: 4vw;
+                height: 4vw;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                margin-top: 1vw;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .hp {
+                color: #fb7299;
+                width: 100%;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .hp .progress {
+                    width: 100%;
+                    margin: 0;
+                    padding: 1px;
+                    background: rgba(151, 151, 151, 0.25);
+                    border-radius: 0.2rem;
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .hp .progress .progress-bar {
+                        position: relative;
+                        height: 1vw;
+                        border-radius: 0.2rem;
+                        -webkit-transition: 0.4s linear;
+                        -moz-transition: 0.4s linear;
+                        -o-transition: 0.4s linear;
+                        transition: 0.4s linear;
+                        -webkit-transition-property: width, background-color;
+                        -moz-transition-property: width, background-color;
+                        -o-transition-property: width, background-color;
+                        transition-property: width, background-color;
+                        -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        /*-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);*/
+                        background-color: #f63a0f;
+                        width: 0%;
+                    }
+
+                        #PartialMission .currentFleet .fleetships .shipcell .hp .progress .progress-bar:before, .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        #PartialMission .currentFleet .fleetships .shipcell .hp .progress .progress-bar:before {
+                            bottom: 0;
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                        #PartialMission .currentFleet .fleetships .shipcell .hp .progress .progress-bar:after {
+                            z-index: 2;
+                            bottom: 45%;
+                            border-radius: 4px;
+                            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                        }
+
+            #PartialMission .currentFleet .fleetships .shipcell .resource {
+                margin-top: 1vw;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .title {
+                font-size: 2vw;
+                height: 2.5vw;
+                line-height: 2.5vw;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #PartialMission .currentFleet .fleetships .shipcell .grid {
+                display: flex;
+                justify-content: space-between;
+                border: 0.03rem solid #d4dcd6;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .grid dd {
+                    width: 8%;
+                    height: 0.15rem;
+                    background: #bbbbbb;
+                    -webkit-transition: 0.4s linear;
+                    -moz-transition: 0.4s linear;
+                    -o-transition: 0.4s linear;
+                    transition: 0.4s linear;
+                    -webkit-transition-property: background-color;
+                    -moz-transition-property: background-color;
+                    -o-transition-property: background-color;
+                    transition-property: background-color;
+                }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .grid dd.have {
+                        background: #31c12d;
+                    }
+
+                #PartialMission .currentFleet .fleetships .shipcell .grid.warning dd.have {
+                    background: #e4a734;
+                }
+
+                #PartialMission .currentFleet .fleetships .shipcell .grid.danger dd.have {
+                    background: #ea6565;
+                }
+
+            #PartialMission .currentFleet .fleetships .shipcell .equipments {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                height: 14vw;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .equipments dd {
+                    width: 6vw;
+                    height: 6vw;
+                    margin-top: 1vw;
+                    cursor: pointer;
+                    border-radius: 1vw;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 0.05rem 0.05rem #989898;
+                }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .equipments dd img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .equipments dd.null {
+                        line-height: 6vw;
+                        text-align: center;
+                        font-size: 4vw;
+                        color: #545454;
+                        border: 0.05rem solid #9bcaec;
+                    }
+
+                        #PartialMission .currentFleet .fleetships .shipcell .equipments dd.null i {
+                            margin: 0 auto;
+                        }
+
+                #PartialMission .currentFleet .fleetships .shipcell .equipments .equipment {
+                    display: -webkit-box;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                    display: -moz-box;
+                    -moz-box-orient: horizontal;
+                    -moz-box-pack: center;
+                    -moz-box-align: center;
+                    display: -o-box;
+                    -o-box-orient: horizontal;
+                    -o-box-pack: center;
+                    -o-box-align: center;
+                    display: -ms-box;
+                    -ms-box-orient: horizontal;
+                    -ms-box-pack: center;
+                    -ms-box-align: center;
+                    width: 100%;
+                    margin: 2.5%;
+                    height: 6vw;
+                    line-height: 4vw;
+                    font-size: 3vw;
+                    overflow: hidden;
+                    background: #efd7e0;
+                    -ms-word-break: break-all;
+                    word-break: break-all;
+                    color: #2d2c2c;
+                }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .equipments .equipment.null {
+                        background: #f3eeef;
+                    }
+
+                    #PartialMission .currentFleet .fleetships .shipcell .equipments .equipment.have:active {
+                        background: #e2afc2;
+                        color: #fff;
+                    }
+
+            #PartialMission .currentFleet .fleetships .shipcell .actions {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 3vw;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .actions a {
+                    display: block;
+                    width: 100%;
+                    font-size: 2.8vw;
+                    height: 5vw;
+                    line-height: 4vw;
+                    color: #fb7299;
+                    border: 0.05rem solid;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+            #PartialMission .currentFleet .fleetships .shipcell .picker {
+                text-align: center;
+                color: #737373;
+                padding-top: 2vw;
+                border: 0.05rem solid #e0e0e0;
+                height: 57vw;
+            }
+
+                #PartialMission .currentFleet .fleetships .shipcell .picker i {
+                    font-size: 8vw;
+                    line-height: 10vw;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                #PartialMission .currentFleet .fleetships .shipcell .picker label {
+                    line-height: 7vw;
+                    font-size: 5vw;
+                    margin-top: 1vw;
+                    text-align: center;
+                }
+
+#PartialMission .shiplist {
+    margin-top: 3vw;
+    border-radius: 6px;
+    border: 3px solid #a7b7d7;
+    padding: 2vw;
+    position: relative;
+    height: 86vw;
+}
+
+    #PartialMission .shiplist h2 {
+        font-size: 5vw;
+    }
+
+    #PartialMission .shiplist .changeFleet {
+        position: absolute;
+        right: 1.5vw;
+        top: 1.2vw;
+    }
+
+    #PartialMission .shiplist .shipRow-list {
+        margin-top: 2vw;
+        overflow: hidden;
+        -moz-animation-duration: 0.4s;
+        -o-animation-duration: 0.4s;
+        -webkit-animation-duration: 0.4s;
+        animation-duration: 0.4s;
+    }
+
+    #PartialMission .shiplist .shipRow {
+        height: 12.2vw;
+        width: 125vw;
+        overflow: hidden;
+        margin-left: 0vw;
+        position: relative;
+    }
+
+        #PartialMission .shiplist .shipRow .shipstatus {
+            position: absolute;
+            left: 0.35rem;
+            bottom: 0.01rem;
+            font-size: 0.25rem;
+            z-index: 9;
+            background: #e23272;
+            color: #fff;
+            padding: 0 0.1rem;
+        }
+
+        #PartialMission .shiplist .shipRow .ship {
+            display: flex;
+            justify-content: center;
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 0.5vw 0;
+            height: 12vw;
+            width: 85vw;
+            float: left;
+            border-bottom: 1px dotted #000000;
+        }
+
+        #PartialMission .shiplist .shipRow:last-child .ship {
+            border-bottom: none;
+        }
+
+        #PartialMission .shiplist .shipRow .ship dd {
+            padding: 0 1vw;
+            width: 17vw;
+        }
+
+            #PartialMission .shiplist .shipRow .ship dd.name {
+                width: 20vw;
+                white-space: nowrap;
+                overflow: hidden;
+                -webkit-box-flex: 1;
+                flex: 1;
+                font-weight: bolder;
+            }
+
+    #PartialMission .shiplist .actionRow {
+        height: 12vw;
+        width: 100%;
+        overflow: hidden;
+    }
+
+        #PartialMission .shiplist .actionRow dl.action {
+            line-height: 11vw;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+            #PartialMission .shiplist .actionRow dl.action dd {
+                font-size: 5vw;
+                width: 25vw;
+            }
+
+    #PartialMission .shiplist .shipRow .actions {
+        float: right;
+        width: 40vw;
+        height: 10vw;
+        line-height: 10vw;
+        margin-top: 1vw;
+        padding-left: 5vw;
+    }
+
+        #PartialMission .shiplist .shipRow .actions > a.modify {
+            display: block;
+            width: 20vw;
+            float: left;
+            font-size: 4vw;
+            text-align: center;
+            background: #5097d9;
+            color: #fff;
+            height: 100%;
+        }
+
+        #PartialMission .shiplist .shipRow .actions > a.del {
+            display: block;
+            width: 15vw;
+            float: left;
+            font-size: 4vw;
+            text-align: center;
+            background: #f45454;
+            color: #fff;
+        }
+/*底部按钮*/
+#PartialMission .bottomActions {
+    margin-top: 4vw;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+    #PartialMission .bottomActions a {
+        margin-left: 2vw;
+    }
+
+#PartialMission .missiondailog {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+/*战况*/
+#PartialMission .fightMap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15vw;
+    height: 60vw;
+    background: #ffffff;
+    padding: 2vw 2vw 0 2vw;
+    z-index: 60;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+    #PartialMission .fightMap.minimization {
+        display: none;
+    }
+
+    #PartialMission .fightMap .mapinfo {
+        position: relative;
+        background-image: url('../../images/battleSea.jpg');
+        background-size: 100% 100%;
+        border: 3px solid #8ec6ef;
+        width: 100%;
+        height: 100%;
+        padding: 1vw;
+        overflow: hidden;
+    }
+
+    #PartialMission .fightMap .mapTitle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -25vw;
+        height: 5vw;
+        line-height: 5vw;
+        width: 50vw;
+        overflow: hidden;
+        font-size: 3vw;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bolder;
+    }
+
+    #PartialMission .fightMap .team {
+        position: absolute;
+    }
+
+        #PartialMission .fightMap .team.our {
+            top: 4vw;
+            left: 2vw;
+        }
+
+        #PartialMission .fightMap .team.enemy {
+            top: 4vw;
+            left: 52.5vw;
+        }
+
+        #PartialMission .fightMap .team dd {
+            margin-top: 1px;
+            display: flex;
+        }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(1) {
+                -moz-animation: slideInLeft 700ms ease 0ms both;
+                -o-animation: slideInLeft 700ms ease 0ms both;
+                -webkit-animation: slideInLeft 700ms ease 0ms both;
+                animation: slideInLeft 700ms ease 0ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(2) {
+                -moz-animation: slideInLeft 700ms ease 100ms both;
+                -o-animation: slideInLeft 700ms ease 100ms both;
+                -webkit-animation: slideInLeft 700ms ease 100ms both;
+                animation: slideInLeft 700ms ease 100ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(3) {
+                -moz-animation: slideInLeft 700ms ease 200ms both;
+                -o-animation: slideInLeft 700ms ease 200ms both;
+                -webkit-animation: slideInLeft 700ms ease 200ms both;
+                animation: slideInLeft 700ms ease 200ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(4) {
+                -moz-animation: slideInLeft 700ms ease 300ms both;
+                -o-animation: slideInLeft 700ms ease 300ms both;
+                -webkit-animation: slideInLeft 700ms ease 300ms both;
+                animation: slideInLeft 700ms ease 300ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(5) {
+                -moz-animation: slideInLeft 700ms ease 400ms both;
+                -o-animation: slideInLeft 700ms ease 400ms both;
+                -webkit-animation: slideInLeft 700ms ease 400ms both;
+                animation: slideInLeft 700ms ease 400ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inLeft:nth-child(6) {
+                -moz-animation: slideInLeft 700ms ease 500ms both;
+                -o-animation: slideInLeft 700ms ease 500ms both;
+                -webkit-animation: slideInLeft 700ms ease 500ms both;
+                animation: slideInLeft 700ms ease 500ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.outLeft {
+                -moz-animation: slideOutLeft 700ms ease both;
+                -o-animation: slideOutLeft 700ms ease both;
+                -webkit-animation: slideOutLeft 700ms ease both;
+                animation: slideOutLeft 700ms ease both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(1) {
+                -moz-animation: slideInRight 700ms ease 0ms both;
+                -o-animation: slideInRight 700ms ease 0ms both;
+                -webkit-animation: slideInRight 700ms ease 0ms both;
+                animation: slideInRight 700ms ease 0ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(2) {
+                -moz-animation: slideInRight 700ms ease 100ms both;
+                -o-animation: slideInRight 700ms ease 100ms both;
+                -webkit-animation: slideInRight 700ms ease 100ms both;
+                animation: slideInRight 700ms ease 100ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(3) {
+                -moz-animation: slideInRight 700ms ease 200ms both;
+                -o-animation: slideInRight 700ms ease 200ms both;
+                -webkit-animation: slideInRight 700ms ease 200ms both;
+                animation: slideInRight 700ms ease 200ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(4) {
+                -moz-animation: slideInRight 700ms ease 300ms both;
+                -o-animation: slideInRight 700ms ease 300ms both;
+                -webkit-animation: slideInRight 700ms ease 300ms both;
+                animation: slideInRight 700ms ease 300ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(5) {
+                -moz-animation: slideInRight 700ms ease 400ms both;
+                -o-animation: slideInRight 700ms ease 400ms both;
+                -webkit-animation: slideInRight 700ms ease 400ms both;
+                animation: slideInRight 700ms ease 400ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.inRight:nth-child(6) {
+                -moz-animation: slideInRight 700ms ease 500ms both;
+                -o-animation: slideInRight 700ms ease 500ms both;
+                -webkit-animation: slideInRight 700ms ease 500ms both;
+                animation: slideInRight 700ms ease 500ms both;
+            }
+
+            #PartialMission .fightMap .team dd.animated.outRight {
+                -moz-animation: slideOutRight 700ms ease both;
+                -o-animation: slideOutRight 700ms ease both;
+                -webkit-animation: slideOutRight 700ms ease both;
+                animation: slideOutRight 700ms ease both;
+            }
+
+
+            #PartialMission .fightMap .team dd .detail {
+                width: 11vw;
+                height: 8vw;
+                padding: 0 0.05rem;
+            }
+
+                #PartialMission .fightMap .team dd .detail .lv {
+                    font-size: 2.8vw;
+                    color: #fff;
+                    height: 3vw;
+                    line-height: 3.2vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                #PartialMission .fightMap .team dd .detail .name {
+                    font-size: 2.5vw;
+                    color: #fff;
+                    height: 3vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    line-height: 3vw;
+                }
+
+
+                #PartialMission .fightMap .team dd .detail .progress_hp {
+                    height: 2vw;
+                    width: 100%;
+                    margin: 0;
+                    padding: 1px;
+                    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                }
+
+                    #PartialMission .fightMap .team dd .detail .progress_hp .progress-bar {
+                        position: relative;
+                        height: 1vw;
+                        -webkit-transition: 0.4s linear;
+                        -moz-transition: 0.4s linear;
+                        -o-transition: 0.4s linear;
+                        transition: 0.4s linear;
+                        -webkit-transition-property: width, background-color;
+                        -moz-transition-property: width, background-color;
+                        -o-transition-property: width, background-color;
+                        transition-property: width, background-color;
+                        -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                        background-color: #f63a0f;
+                        width: 0%;
+                    }
+
+                        #PartialMission .fightMap .team dd .detail .progress_hp .progress-bar.right {
+                            float: right;
+                        }
+
+                        #PartialMission .fightMap .team dd .detail .progress_hp .progress-bar:before, .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        #PartialMission .fightMap .team dd .detail .progress_hp .progress-bar:before {
+                            bottom: 0;
+                            border-radius: 4px 4px 0 0;
+                        }
+
+                        #PartialMission .fightMap .team dd .detail .progress_hp .progress-bar:after {
+                            z-index: 2;
+                            bottom: 45%;
+                            border-radius: 4px;
+                            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                        }
+
+            #PartialMission .fightMap .team dd .shipimg {
+                border: 0.05rem solid #e4e6e7;
+                position: relative;
+                width: 29vw;
+                height: 8vw;
+            }
+
+        #PartialMission .fightMap .team.our dd .shipimg .type {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6vw;
+        }
+
+        #PartialMission .fightMap .team.enemy dd .shipimg .type {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 6vw;
+        }
+
+        #PartialMission .fightMap .team dd .shipimg .face {
+            height: 7vw;
+            width: 28vw;
+            display: flex;
+            background-size: 100% 100%;
+        }
+
+            #PartialMission .fightMap .team dd .shipimg .face img {
+                width: 100%;
+                height: 100%;
+            }
+
+        #PartialMission .fightMap .team dd .warresult {
+            width: 10vw;
+            height: 8vw;
+        }
+
+            #PartialMission .fightMap .team dd .warresult.animated {
+                -moz-animation-duration: 0.5s;
+                -o-animation-duration: 0.5s;
+                -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
+            }
+
+            #PartialMission .fightMap .team dd .warresult .expadd {
+                height: 4vw;
+                line-height: 4vw;
+                font-size: 2.5vw;
+                color: #fff100;
+            }
+
+            #PartialMission .fightMap .team dd .warresult .mvp {
+                font-size: 2.5vw;
+                height: 3vw;
+                line-height: 3vw;
+                color: #ef7f36;
+                font-weight: bolder;
+                padding-left: 1vw;
+            }
+
+    #PartialMission .fightMap .map {
+        width: 80vw;
+        height: 45vw;
+        background: #c6dcec;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 6vw;
+        border-radius: 1vw;
+    }
+
+        #PartialMission .fightMap .map.animated {
+            -moz-animation-duration: 0.5s;
+            -o-animation-duration: 0.5s;
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+        }
+
+/*日志*/
+
+
+#PartialMission .mainLog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*top: 15vw;*/
+    top: 75vw;
+    bottom: 0;
+    background: #ffffff;
+    padding: 2vw;
+    z-index: 60;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+    #PartialMission .mainLog.maximization {
+        top: 15vw;
+    }
+
+    #PartialMission .mainLog #LogsInfo {
+        border: 3px solid #8ec6ef;
+        width: 100%;
+        height: 100%;
+        padding: 1vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        #PartialMission .mainLog #LogsInfo p {
+            -ms-word-break: break-all;
+            word-break: break-all;
+            font-size: 4vw;
+            line-height: 5vw;
+            color: #7d7a7a;
+        }
+
+
+    #PartialMission .mainLog .closeLog {
+        position: absolute;
+        right: 5vw;
+        bottom: 6vw;
+        z-index: 61;
+    }
+
+    #PartialMission .mainLog .clearLog {
+        position: absolute;
+        right: 28vw;
+        bottom: 6vw;
+        z-index: 61;
+    }
+
+
+    #PartialMission .mainLog .logBottom {
+        position: absolute;
+        right: 5vw;
+        top: 25vw;
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        line-height: 5vw;
+        z-index: 61;
+    }
+
+    #PartialMission .mainLog .logTop {
+        position: absolute;
+        right: 5vw;
+        top: 15vw;
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        line-height: 5vw;
+        z-index: 61;
+    }
+
+    #PartialMission .mainLog .stopLog {
+        position: absolute;
+        right: 5vw;
+        top: 35vw;
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        line-height: 5vw;
+        z-index: 61;
+    }
+
+    #PartialMission .mainLog .maximizationLog {
+        position: absolute;
+        right: 5vw;
+        top: 5vw;
+        display: block;
+        width: 8vw;
+        height: 8vw;
+        line-height: 5vw;
+        z-index: 61;
+    }
+
+/*快速消息*/
+#PartialMission #OpenQuickLog {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    color: #fb7299;
+    z-index: 9;
+}
+
+#PartialMission .quickLogs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0vw;
+    height: 10vw;
+    line-height: 10vw;
+    border-bottom: 1px solid #b9b9b9;
+    z-index: 9;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+    #PartialMission .quickLogs .text {
+        width: 80vw;
+        padding: 0 2vw;
+        float: left;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+        #PartialMission .quickLogs .text p {
+        }
+
+    #PartialMission .quickLogs .actions {
+        float: right;
+    }
+
+        #PartialMission .quickLogs .actions a {
+            margin-right: 2vw;
+            color: #fb7299;
+        }
+
+/*数据统计*/
+.modal_missionPanel_statistics {
+}
+
+    .modal_missionPanel_statistics .mainStatistics {
+    }
+
+
+        .modal_missionPanel_statistics .mainStatistics .zhandou {
+        }
+
+            .modal_missionPanel_statistics .mainStatistics .zhandou .title {
+                font-size: 6vw;
+                height: 9vw;
+                line-height: 9vw;
+            }
+
+            .modal_missionPanel_statistics .mainStatistics .zhandou dl {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+                .modal_missionPanel_statistics .mainStatistics .zhandou dl dd {
+                    width: 50%;
+                    width: 50%;
+                    font-size: 5vw;
+                    line-height: 7vw;
+                }
+
+                    .modal_missionPanel_statistics .mainStatistics .zhandou dl dd label {
+                        padding-right: 1vw;
+                    }
+
+                    .modal_missionPanel_statistics .mainStatistics .zhandou dl dd.row {
+                        width: 100%;
+                    }
+
+        .modal_missionPanel_statistics .mainStatistics .yuanzheng {
+            border-top: 1vw solid #d4d4d4;
+            padding-top: 2vw;
+            margin-top: 2vw;
+        }
+
+            .modal_missionPanel_statistics .mainStatistics .yuanzheng .title {
+                font-size: 6vw;
+                height: 9vw;
+                line-height: 9vw;
+            }
+
+            .modal_missionPanel_statistics .mainStatistics .yuanzheng dl {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+                .modal_missionPanel_statistics .mainStatistics .yuanzheng dl dd {
+                    width: 50%;
+                    font-size: 5vw;
+                    line-height: 7vw;
+                }
+
+                    .modal_missionPanel_statistics .mainStatistics .yuanzheng dl dd label {
+                        width: 13vw;
+                        text-align: right;
+                        padding-right: 1vw;
+                    }
+/*出货统计*/
+.modal_missionPanel_chuhuo {
+}
+
+    .modal_missionPanel_chuhuo .modal-title i {
+        font-size: 6vw;
+        margin-left: 2vw;
+    }
+
+    .modal_missionPanel_chuhuo .modal-body {
+        padding-top: 3vw;
+    }
+
+    .modal_missionPanel_chuhuo .mainChuHuo {
+    }
+
+        .modal_missionPanel_chuhuo .mainChuHuo .tableHeader {
+            display: flex;
+            border-bottom: 0.05rem solid;
+        }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader div {
+                font-size: 4vw;
+                height: 8vw;
+                line-height: 8vw;
+                font-weight: bolder;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader .time {
+                width: 25%;
+            }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader .mapid {
+                width: 20%;
+            }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader .nodename {
+                width: 12%;
+            }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader .shipname {
+                width: 41%;
+            }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableHeader .resultleveltext {
+                width: 12%;
+            }
+
+        .modal_missionPanel_chuhuo .mainChuHuo .tableList {
+        }
+
+            .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow {
+                display: flex;
+            }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow.important {
+                    color: #f6407f;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow dd {
+                    font-size: 3.5vw;
+                    height: 6vw;
+                    line-height: 6vw;
+                    text-align: center;
+                    overflow: hidden;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow .time {
+                    width: 25%;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow .mapid {
+                    width: 20%;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow .nodename {
+                    width: 12%;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow .shipname {
+                    width: 41%;
+                }
+
+                .modal_missionPanel_chuhuo .mainChuHuo .tableList .chuHuoRow .resultleveltext {
+                    width: 12%;
+                }
+/*任务队列*/
+#PartialMission .topactions {
+    margin-top: 2vw;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+#PartialMission .btnworkqueue {
+    /*position: absolute;
+    left: 73vw;
+    top: 29vw;
+    height: 7vw;
+    z-index: 58;*/
+    margin-left: 2vw;
+}
+
+    #PartialMission .btnworkqueue .fa {
+        /*position: absolute;
+        top: 0;
+        left: 0vw;*/
+        font-size: 5vw;
+        width: 24vw;
+        text-align: center;
+        height: 7vw;
+        display: block;
+        padding: 1vw;
+        color: #fff;
+        background: #fb7299;
+        font-size: 4vw;
+        border: 0.02rem dotted #ffffff;
+        line-height: 5vw;
+    }
+
+.queueWorkerControl {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1070;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    /*display: none;*/
+}
+
+    .queueWorkerControl .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .queueWorkerControl .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .queueWorkerControl .queuelist {
+        padding: 2vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 15vw;
+        overflow: auto;
+    }
+
+        .queueWorkerControl .queuelist .queue {
+            width: 96vw;
+            border: 1vw solid;
+            padding: 2vw;
+            margin-top: 3vw;
+        }
+
+            .queueWorkerControl .queuelist .queue.active {
+                border-color: #fb7299;
+            }
+
+            .queueWorkerControl .queuelist .queue:first-child {
+                margin-top: 0;
+            }
+
+            .queueWorkerControl .queuelist .queue .quheader {
+                font-size: 5vw;
+                display: flex;
+                height: 10vw;
+                line-height: 10vw;
+                border-bottom: 0.05rem dotted;
+            }
+
+                .queueWorkerControl .queuelist .queue .quheader .quname {
+                    width: 50vw;
+                    font-weight: bolder;
+                    overflow: hidden;
+                }
+
+                .queueWorkerControl .queuelist .queue .quheader .actions {
+                    width: 40vw;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                    .queueWorkerControl .queuelist .queue .quheader .actions a {
+                        padding: 0.5vw 1.5vw;
+                        margin-bottom: 0;
+                        font-size: 4vw;
+                        height: 8vw;
+                        line-height: 7vw;
+                        font-weight: 400;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        background-image: none;
+                        border: 0.05rem solid #fb7299;
+                        border-radius: 0.1rem;
+                        color: #fb7299;
+                        background: #fff;
+                        margin-left: 2vw;
+                        display: none;
+                    }
+
+                        .queueWorkerControl .queuelist .queue .quheader .actions a.disabled {
+                            background: #e9e9e9;
+                            color: #adadad;
+                            border-color: #a9a9a9;
+                        }
+
+            .queueWorkerControl .queuelist .queue .quNodeList {
+                width: 100%;
+                overflow: hidden;
+            }
+
+                .queueWorkerControl .queuelist .queue .quNodeList .qunode {
+                    display: flex;
+                    padding-top: 2vw;
+                    padding-bottom: 1vw;
+                    border-bottom: 1px dotted;
+                    justify-content: space-between;
+                }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode.IsForbidden {
+                        opacity: 0.4;
+                    }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode.active {
+                        color: #fb7299;
+                    }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody {
+                        width: 70vw;
+                        height: 10vw;
+                    }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .title {
+                            height: 6vw;
+                            line-height: 6vw;
+                            font-size: 4.5vw;
+                            overflow: hidden;
+                        }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .title i {
+                                margin-right: 1vw;
+                                display: none;
+                            }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode.current .nodebody .title i {
+                        display: normal;
+                    }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber {
+                        height: 4vw;
+                        font-size: 3.5vw;
+                        line-height: 4vw;
+                        display: flex;
+                    }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .fleetid {
+                            margin-right: 2vw;
+                        }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .fa {
+                            margin-left: 2vw;
+                        }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .number {
+                            width: 50vw;
+                            display: flex;
+                        }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .number .now {
+                            }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .number .split {
+                            }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodebody .teamAndNumber .number .total {
+                            }
+
+                    .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodesetting {
+                        width: 22vw;
+                    }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodesetting .st {
+                            width: 42vw;
+                            height: 5vw;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodesetting .st label {
+                                font-size: 3vw;
+                                height: 5vw;
+                                line-height: 5vw;
+                                text-align: center;
+                                width: 14vw;
+                                text-align: center;
+                            }
+
+                        .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodesetting .nodeAction {
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+
+                            .queueWorkerControl .queuelist .queue .quNodeList .qunode .nodesetting .nodeAction a {
+                                font-size: 3.6vw;
+                                padding: 0 2vw;
+                            }
+/*所罗门之晓*/
+.qiXiTeamControlSet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1079;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #fff;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+
+    .qiXiTeamControlSet .modelheader {
+        height: 15vw;
+        line-height: 20vw;
+        font-size: 6vw;
+        text-align: center;
+        background: #fb7299;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 1vw;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+        .qiXiTeamControlSet .modelheader a {
+            display: block;
+            width: 15vw;
+            height: 15vw;
+            line-height: 20vw;
+            font-size: 8vw;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .qiXiTeamControlSet .maplist {
+        position: absolute;
+        top: 15vw;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        .qiXiTeamControlSet .maplist .maprow {
+            width: 100vw;
+            padding: 2vw;
+            border-bottom: 1vw solid #cecdcd;
+        }
+
+            .qiXiTeamControlSet .maplist .maprow.unsupported {
+                opacity: 0.5;
+            }
+
+            .qiXiTeamControlSet .maplist .maprow .topbar {
+                display: flex;
+                margin-bottom: 1vw;
+            }
+
+                .qiXiTeamControlSet .maplist .maprow .topbar .title {
+                    font-size: 5vw;
+                    height: 8vw;
+                    line-height: 8vw;
+                    width: 40vw;
+                    font-weight: bolder;
+                }
+
+                .qiXiTeamControlSet .maplist .maprow .topbar .repairType {
+                    width: 26vw;
+                    padding-right: 6vw;
+                }
+
+                    .qiXiTeamControlSet .maplist .maprow .topbar .repairType select {
+                        width: 100%;
+                        height: 8vw;
+                        border-radius: 1vw;
+                        border: 2px solid #ccc6c6;
+                        background-color: #fff;
+                        outline: none;
+                        -webkit-appearance: none;
+                        font-size: 3.5vw;
+                        text-indent: 1vw;
+                        color: #444;
+                    }
+
+                .qiXiTeamControlSet .maplist .maprow .topbar .switch {
+                    height: 8vw;
+                    line-height: 8vw;
+                    width: 30vw;
+                    display: flex;
+                }
+
+                    .qiXiTeamControlSet .maplist .maprow .topbar .switch label {
+                        font-size: 5vw;
+                    }
+
+                    .qiXiTeamControlSet .maplist .maprow .topbar .switch .icons {
+                        font-size: 6vw;
+                        padding-left: 1vw;
+                    }
+
+                        .qiXiTeamControlSet .maplist .maprow .topbar .switch .icons i.fa-toggle-off {
+                            display: initial;
+                        }
+
+                        .qiXiTeamControlSet .maplist .maprow .topbar .switch .icons i.fa-toggle-on {
+                            display: none;
+                        }
+
+                    .qiXiTeamControlSet .maplist .maprow .topbar .switch.on i.fa-toggle-off {
+                        display: none;
+                    }
+
+                    .qiXiTeamControlSet .maplist .maprow .topbar .switch.on i.fa-toggle-on {
+                        display: initial;
+                    }
+
+            .qiXiTeamControlSet .maplist .maprow .shiplist {
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+                .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell {
+                    width: 15vw;
+                    height: 37vw;
+                    text-align: center;
+                    padding: 0.05rem;
+                    background: #ebf5ee;
+                    margin: 0.05rem 0.05rem;
+                }
+
+                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd {
+                        height: 27vw;
+                        position: relative;
+                        margin-bottom: 1vw;
+                    }
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .status {
+                            position: absolute;
+                            bottom: 4vw;
+                            left: 0;
+                            width: 100%;
+                            color: #fff;
+                            background: #fb7299;
+                            font-size: 3vw;
+                            height: 4vw;
+                            line-height: 4vw;
+                        }
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                            .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .img img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .type {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            font-size: 3vw;
+                            color: #fb7299;
+                            background: #fff;
+                            padding: 1px;
+                            width: 7vw;
+                        }
+
+
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            font-size: 3vw;
+                            color: #fb7299;
+                            padding: 1px;
+                            width: 7vw;
+                        }
+
+                            .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp .progress {
+                                width: 100%;
+                                margin: 0;
+                                padding: 1px;
+                                background: rgba(151, 151, 151, 1);
+                                -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+                            }
+
+                                .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp .progress .progress-bar {
+                                    position: relative;
+                                    height: 1.5vw;
+                                    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                                    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+                                    background-color: #f63a0f;
+                                    width: 0%;
+                                }
+
+                                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp .progress .progress-bar:before, .slideShipPicker .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                    }
+
+                                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp .progress .progress-bar:before {
+                                        bottom: 0;
+                                        border-radius: 4px 4px 0 0;
+                                    }
+
+                                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .bd .hp .progress .progress-bar:after {
+                                        z-index: 2;
+                                        bottom: 45%;
+                                        border-radius: 4px;
+                                        background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                                        background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                                        background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                                        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+                                    }
+
+                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .name {
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        height: 4vw;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-weight: bolder;
+                    }
+
+                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .level {
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        height: 4vw;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+
+                    .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .picker {
+                        height: 37vw;
+                        position: relative;
+                        width: 100%;
+                        text-align: center;
+                        color: #737373;
+                        border: 0.05rem dotted #c7c7c7;
+                        padding-top: 2vw;
+                    }
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .picker i {
+                            font-size: 9vw;
+                        }
+
+                        .qiXiTeamControlSet .maplist .maprow .shiplist .shipcell .picker label {
+                            line-height: 7vw;
+                            font-size: 5vw;
+                            height: 10vw;
+                            margin-top: 1vw;
+                            text-align: center;
+                            font-weight: bolder;
+                        }
+/*主题*/
+body.miku #PartialMission > .header,
+body.miku #PartialMission .moreRepairPanel .fa-wrench,
+body.miku #PartialMission #PartialMission #OpenQuickLog,
+body.miku #PartialMission .shiplist .shipRow .shipstatus,
+body.miku #PartialMission .btnworkqueue .fa,
+body.miku .queueWorkerControl .modelheader,
+body.miku #PartialMission .currentFleet .topBar .fleetNos dd,
+body.miku #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #39C5BB;
+}
+
+
+body.miku #PartialMission #OpenQuickLog,
+body.miku #PartialMission .missionSelecter a,
+body.miku #PartialMission .quickLogs .actions a,
+body.miku #PartialMission .moreRepairPanel .bd h2,
+body.miku #PartialMission .moreRepairPanel .bd h3,
+body.miku .queueWorkerControl .queuelist .queue .quNodeList .qunode.active,
+body.miku .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.miku #PartialMission .currentFleet .fleetships .shipcell .actions a {
+    color: #39C5BB;
+}
+
+body.miku #PartialMission .missionSelecter a,
+body.miku #PartialMission .moreRepairPanel,
+body.miku #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType,
+body.miku #PartialMission .shiplist,
+body.miku #PartialMission .mainLog #LogsInfo,
+body.miku .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.miku .queueWorkerControl .queuelist .queue.active {
+    border-color: #39C5BB;
+}
+/**/
+body.tianyi #PartialMission > .header,
+body.tianyi #PartialMission .moreRepairPanel .fa-wrench,
+body.tianyi #PartialMission #PartialMission #OpenQuickLog,
+body.tianyi #PartialMission .shiplist .shipRow .shipstatus,
+body.tianyi #PartialMission .btnworkqueue .fa,
+body.tianyi .queueWorkerControl .modelheader,
+body.tianyi #PartialMission .currentFleet .topBar .fleetNos dd,
+body.tianyi #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #4bafe2;
+}
+
+
+body.tianyi #PartialMission #OpenQuickLog,
+body.tianyi #PartialMission .missionSelecter a,
+body.tianyi #PartialMission .quickLogs .actions a,
+body.tianyi #PartialMission .moreRepairPanel .bd h2,
+body.tianyi #PartialMission .moreRepairPanel .bd h3,
+body.tianyi .queueWorkerControl .queuelist .queue .quNodeList .qunode.active,
+body.tianyi .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.tianyi #PartialMission .currentFleet .fleetships .shipcell .actions a {
+    color: #4bafe2;
+}
+
+body.tianyi #PartialMission .missionSelecter a,
+body.tianyi #PartialMission .moreRepairPanel,
+body.tianyi #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType,
+body.tianyi #PartialMission .shiplist,
+body.tianyi #PartialMission .mainLog #LogsInfo,
+body.tianyi .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.tianyi .queueWorkerControl .queuelist .queue.active {
+    border-color: #4bafe2;
+}
+
+/**/
+body.hong #PartialMission > .header,
+body.hong #PartialMission .moreRepairPanel .fa-wrench,
+body.hong #PartialMission #PartialMission #OpenQuickLog,
+body.hong #PartialMission .shiplist .shipRow .shipstatus,
+body.hong #PartialMission .btnworkqueue .fa,
+body.hong .queueWorkerControl .modelheader,
+body.hong #PartialMission .currentFleet .topBar .fleetNos dd,
+body.hong #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #dd665b;
+}
+
+
+body.hong #PartialMission #OpenQuickLog,
+body.hong #PartialMission .missionSelecter a,
+body.hong #PartialMission .quickLogs .actions a,
+body.hong #PartialMission .moreRepairPanel .bd h2,
+body.hong #PartialMission .moreRepairPanel .bd h3,
+body.hong .queueWorkerControl .queuelist .queue .quNodeList .qunode.active,
+body.hong .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.hong #PartialMission .currentFleet .fleetships .shipcell .actions a {
+    color: #dd665b;
+}
+
+body.hong #PartialMission .missionSelecter a,
+body.hong #PartialMission .moreRepairPanel,
+body.hong #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType,
+body.hong #PartialMission .shiplist,
+body.hong #PartialMission .mainLog #LogsInfo,
+body.hong .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.hong .queueWorkerControl .queuelist .queue.active {
+    border-color: #dd665b;
+}
+/**/
+body.green #PartialMission > .header,
+body.green #PartialMission .moreRepairPanel .fa-wrench,
+body.green #PartialMission #PartialMission #OpenQuickLog,
+body.green #PartialMission .shiplist .shipRow .shipstatus,
+body.green #PartialMission .btnworkqueue .fa,
+body.green .queueWorkerControl .modelheader,
+body.green #PartialMission .currentFleet .topBar .fleetNos dd,
+body.green #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #33a133;
+}
+
+
+body.green #PartialMission #OpenQuickLog,
+body.green #PartialMission .missionSelecter a,
+body.green #PartialMission .quickLogs .actions a,
+body.green #PartialMission .moreRepairPanel .bd h2,
+body.green #PartialMission .moreRepairPanel .bd h3,
+body.green .queueWorkerControl .queuelist .queue .quNodeList .qunode.active,
+body.green .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.green #PartialMission .currentFleet .fleetships .shipcell .actions a {
+    color: #33a133;
+}
+
+body.green #PartialMission .missionSelecter a,
+body.green #PartialMission .moreRepairPanel,
+body.green #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType,
+body.green #PartialMission .shiplist,
+body.green #PartialMission .mainLog #LogsInfo,
+body.green .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.green .queueWorkerControl .queuelist .queue.active {
+    border-color: #33a133;
+}
+/**/
+body.cheng #PartialMission > .header,
+body.cheng #PartialMission .moreRepairPanel .fa-wrench,
+body.cheng #PartialMission #PartialMission #OpenQuickLog,
+body.cheng #PartialMission .shiplist .shipRow .shipstatus,
+body.cheng #PartialMission .btnworkqueue .fa,
+body.cheng .queueWorkerControl .modelheader,
+body.cheng #PartialMission .currentFleet .topBar .fleetNos dd,
+body.cheng #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #fb8633;
+}
+
+
+body.cheng #PartialMission #OpenQuickLog,
+body.cheng #PartialMission .missionSelecter a,
+body.cheng #PartialMission .quickLogs .actions a,
+body.cheng #PartialMission .moreRepairPanel .bd h2,
+body.cheng #PartialMission .moreRepairPanel .bd h3,
+body.cheng .queueWorkerControl .queuelist .queue .quNodeList .qunode.active,
+body.cheng .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.cheng #PartialMission .currentFleet .fleetships .shipcell .actions a {
+    color: #fb8633;
+}
+
+body.cheng #PartialMission .missionSelecter a,
+body.cheng #PartialMission .moreRepairPanel,
+body.cheng #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType,
+body.cheng #PartialMission .shiplist,
+body.cheng #PartialMission .mainLog #LogsInfo,
+body.cheng .queueWorkerControl .queuelist .queue .quheader .actions a,
+body.cheng .queueWorkerControl .queuelist .queue.active {
+    border-color: #fb8633;
+}
+/*夜间模式*/
+body.night #PartialMission > .header,
+body.night .queueWorkerControl .modelheader,
+body.night #PartialMission .currentFleet .topBar .fleetNos dd,
+body.night #PartialMission .currentFleet .fleetships .shipcell .bd .status {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night #PartialMission .moreRepairPanel .fa-wrench,
+body.night #PartialMission .btnworkqueue .fa {
+    background: #6c6c6c;
+    color: #9b9b9b;
+}
+
+body.night #PartialMission .quickLogs {
+    background: #323232;
+    border-color: #444141;
+}
+
+    body.night #PartialMission .quickLogs .actions a,
+    body.night #PartialMission .currentFleet .fleetships .shipcell .actions a {
+        color: #b4abae;
+    }
+
+body.night #PartialMission .moreRepairPanel {
+    border-color: #6c6c6c;
+    background: #bfbfbf;
+}
+
+    body.night #PartialMission .moreRepairPanel .bd h2, body.night #PartialMission .moreRepairPanel .bd h3 {
+        color: #9b9b9b;
+    }
+
+    body.night #PartialMission .moreRepairPanel .bd .repairCell .ShipRepairType {
+        border-color: #9b9b9b;
+    }
+
+body.night #PartialMission #PartialMission #OpenQuickLog {
+    background: #6c6c6c;
+}
+
+body.night #PartialMission #OpenQuickLog {
+    color: #6c6c6c;
+}
+
+body.night #PartialMission .missionSelecter a {
+    color: #6c6c6c;
+    border-color: #6c6c6c;
+}
+
+body.night #PartialMission .shiplist {
+    border-color: #6c6c6c;
+}
+
+body.night #PartialMission .mainLog,
+body.night #PartialMission .fightMap {
+    background: #282828;
+}
+
+    body.night #PartialMission .mainLog #LogsInfo,
+    body.night #PartialMission .fightMap .mapinfo {
+        border-color: #6d6d6d;
+        opacity: 0.5;
+    }
+
+body.night #PartialMission .shiplist .shipRow .shipstatus {
+    background: #5b5b5b;
+    color: #9a9898;
+}
+
+body.night #PartialMission .missionSelecter.working select {
+    background: #b7b7b7;
+    color: #625f5f;
+}
+
+body.night #PartialMission .missionProgress {
+    color: #6a696c;
+}
+
+body.night #PartialMission .missionSelecter.stoping a.btnStopMission {
+    background: #727272;
+}
+
+
+
+body.night #PartialMission .shiplist .shipRow .actions {
+    opacity: 0.5;
+}
+
+body.night .queueWorkerControl .queuelist {
+    background: #1d1d1d;
+}
+
+    body.night .queueWorkerControl .queuelist .queue {
+        opacity: 0.7;
+    }
+
+/*iosX*/
+body.iosx #PartialMission > .header {
+    height: 20vw;
+    line-height: 28vw;
+}
+
+body.iosx #PartialMission .context {
+    top: 20vw;
+}
+
+body.iosx #PartialMission .fightMap {
+    top: 20vw;
+}
+
+body.iosx #PartialMission .mainLog {
+    top: 80vw;
+}
+
+body.night #PartialMission .missionSelecter .btnQuickModifyPVE {
+    background: #adacac;
+}
+
+body.night #PartialMission .currentFleet {
+    opacity: 0.5;
+    border-color: #c7c7c7;
+}
+
+body.night #PartialMission .Package dl.resource {
+    opacity: .5;
+}

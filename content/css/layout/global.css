@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color:#333;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, button {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover {
+        cursor: pointer;
+    }
+
+p {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.clear {
+    height: 0px;
+    width: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    clear: both;
+}
+
+.clearfix:after {
+    content: "\20";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    border: 0;
+    vertical-align: middle;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+
+::-webkit-scrollbar-thumb {
+    -moz-border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    border-radius: 0.7rem;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+
+.overellipsis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overellipsis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+* {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
